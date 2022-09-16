@@ -16,7 +16,7 @@ git clone https://github.com/akshaypatil1/the_nice_guys_1.git
     open node terminal
     traval till server folder from the cloned repo
     npm i
-    npm start
+    npm start       -- This will start on 4000 port
 ```
 
 ## How to run client
@@ -25,10 +25,10 @@ git clone https://github.com/akshaypatil1/the_nice_guys_1.git
     open node terminal
     traval till client folder from the cloned repo
     npm i
-    npm start
+    npm start       -- This will start on 3000 port
 ```
 
 ## How to open portal
 ```
-    pending
+    http://localhost:3000/
 ```
