@@ -44,3 +44,14 @@
       .wid-150{
         width:150px;
       }
+      .section2{
+        border:1px solid #c8c8c8;
+        background-color: #f8f9fa;
+        color:black;
+        border-radius: 3px;
+
+      }
+      .title{
+        font-size: 16px;
+        font-family:Credit Suisse type;
+      }

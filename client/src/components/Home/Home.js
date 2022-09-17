@@ -127,17 +127,67 @@ class Home extends React.Component {
 
                         </button>
                     </div>
-                    <div className="mt-20" style={{ background: "grey", height: "30px" }}>
-                        <div className='row'>
 
+                    <div className="mt-20" style={{ background: "grey", height: "30px" }}>
+                        <div className='row col-md-12 ' style={{ height: "200px", marginTop: "20px" }}>
+                            <div className=''>
+                                <span>{'<'} </span>
+                            </div>
+                            <div className='section2' style={{ height: "150px", margin: "30px", marginTop: "50px", marginLeft: "160px", width: "450px" }}>
+                                <div className='status-title'>
+                                    <span class="title">Floor</span>
+                                    <br>
+                                    </br>
+                                    <h1>Eon 2_L3</h1>
+                                </div>
+                            </div>
+                            <div className='section2' style={{ height: "150px", margin: "50px 30px 30px 0px", width: "450px" }}>
+                                <div className='status-title'>
+                                    <span class="title">Total Allocation Seat</span>
+                                    <br>
+                                    </br>
+                                    <h1>120</h1>
+                                </div>
+                            </div>
+                            <div className='section2' style={{ height: "150px", margin: "50px 30px 30px 0px", width: "450px" }}>
+                                <div className='status-title'>
+                                    <span class="title" >Booked Seat</span>
+                                    <br>
+                                    </br>
+                                    <h1>78</h1>
+                                </div>
+                            </div>
+                            <div className='section2' style={{ height: "150px", margin: "50px 30px 30px 0px", width: "450px" }}>
+                                <div className='status-title'>
+                                    <span class="title">Available Seat</span>
+                                    <br>
+                                    </br>
+                                    <h1>42</h1>
+                                </div>
+
+
+                            </div>
+                            <div className=''>
+                                <div className=''>
+                                    <span> {'>'}</span>
+                                </div>
+                            </div>
                         </div>
 
 
                     </div>
 
+                    <div className="col-md-12" style={{ marginTop: "300px", marginLeft: "50px" }}>
+                        <div className='row'>
+                            <div className="col-md-7" style={{ height: "400px", marginTop: "20px", background: "grey", marginRight: "30px", marginLeft: "50px" }}>
+                            </div>
+                            <div className="row col-md-4" style={{ height: "400px", marginTop: "20px", background: "grey", marginRight: "30px" }}>
+                            </div>
+                        </div>
 
 
-                </div>
+                    </div>
+                </div >
 
             </>
         );
