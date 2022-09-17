@@ -4,6 +4,7 @@ import Header from "../common/Header/Header";
 import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
+import Select from 'react-select'
 
 class Employees extends React.Component {
     constructor(props) {
@@ -12,6 +13,11 @@ class Employees extends React.Component {
             employees: [],
             startDate: new Date(),
         }
+        this.options = [
+            { value: 'chocolate', label: 'Chocolate' },
+            { value: 'strawberry', label: 'Strawberry' },
+            { value: 'vanilla', label: 'Vanilla' }
+          ]
     }
 
     componentDidMount() {
@@ -32,6 +38,7 @@ class Employees extends React.Component {
             <>
             <Header active="Employees"/>
                 <div>hello</div>
+                <Select options={this.options} />
                 <DatePicker selected={this.state.startDate} onChange={(date) => this.setState({startDate: date})} />
                 <ul>
                     {this.state.employees.map(employee => (

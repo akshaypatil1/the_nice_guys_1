@@ -27,11 +27,11 @@ function DeskController(){
         let result={};
         result.floors = store.store.DeskMasterDetails.filter(function(p){
             return p.key === "floor";
-        });
+        }).map(i=>{ return {label: `${i.key}_${i.value}`, value: i.value}});
 
         result.zones = store.store.DeskMasterDetails.filter(function(p){
             return p.key === "zone";
-        });
+        }).map(i=>{ return {label: `${i.key}_${i.value}`, value: i.value}});
 
         success(res,200,result,next);
     }
