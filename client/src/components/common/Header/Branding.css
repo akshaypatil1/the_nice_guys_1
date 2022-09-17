@@ -1,0 +1,26 @@
+.branding{
+    height:70px;
+    color:white;
+    background: black;
+}
+.logCs{
+    height: 33px;
+    position: absolute;
+    right: 30px;
+    float: right !important;
+   
+}
+.navbar-brand{
+    display:inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin: right 1rem;
+    font: size 22px;
+    line-height:inherit;
+    white-space:nowrap;
+    font-weight:bold;
+    margin-top:12px;
+    float: right;
+    margin-right: 30px;
+    height: 40px;
+}

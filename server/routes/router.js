@@ -12,5 +12,5 @@ route.route('/employee/:id?')
     .put(Employees.put)
     .delete(Employees.del);
 
-route.route('/public/login').post(Public.login);
+route.route('/login').post(Public.login);
 module.exports = route;

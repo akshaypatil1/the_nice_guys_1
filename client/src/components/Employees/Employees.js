@@ -1,5 +1,6 @@
 import React from 'react';
 import * as EmployeesService from '../../services/EmployeesService'
+import Header from "../common/Header/Header";
 
 class Employees extends React.Component {
     constructor(props) {
@@ -25,6 +26,7 @@ class Employees extends React.Component {
     render() {
         return (
             <>
+            <Header active="Employees"/>
                 <div>hello</div>
                 <ul>
                     {this.state.employees.map(employee => (
