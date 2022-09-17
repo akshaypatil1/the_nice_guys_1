@@ -6,6 +6,7 @@ import DatePicker from "react-datepicker";
 import Select from 'react-select'
 import "./Home.css";
 import * as HomeService from '../../services/HomeService'
+import jwt_decode from "jwt-decode";
 
 class Home extends React.Component {
     constructor(props) {
@@ -18,11 +19,16 @@ class Home extends React.Component {
             selectedFloor: null,
             zones: [],
             selectedZone: null,
+            floorStats: [],
+            bookingDetails: [],
+            currentFloorIndex: 0,
+            floorWiseBookings: [],
         }
     }
 
     componentDidMount() {
-        this.fetchFilters()
+        this.fetchFilters();
+        this.fetchBookingData();
     }
 
     fetchFilters = async () => {
@@ -30,7 +36,41 @@ class Home extends React.Component {
             let response = await HomeService.getFilters();
             this.setState({ floors: response.data.data.floors, zones: response.data.data.zones });
         } catch (error) {
-            console.log(error.log)
+            console.log(error.message)
+        }
+    }
+
+    fetchBookingData = async () => {
+        try {
+            let requestData = {
+                pid: 1000,
+                date: "17/09/2022",
+                roleId: 'DIR'
+            }
+            let decoded = jwt_decode(sessionStorage.getItem('token'));
+            requestData.roleId = decoded.found.roleId;
+            if (decoded.found.roleId === 'EMP') {
+                requestData.pid = decoded.found.managersPid
+            }
+            let response = await HomeService.fetchBookingData(requestData);
+            let floorWiseBookings = response.data.data.bookingData.filter(i => i.isBooked && i.floor === response.data.data.summaryData[0]?.floorId);
+            this.setState({ floorStats: response.data.data.summaryData, bookingDetails: response.data.data.bookingData, floorWiseBookings });
+        } catch (error) {
+            console.log(error.message)
+        }
+    }
+
+    getPreviousFloor = async () => {
+        if (this.state.currentFloorIndex > 0) {
+            let floorWiseBookings = this.state.bookingDetails.filter(i => i.isBooked && i.floor === this.state.floorStats[this.state.currentFloorIndex - 1]?.floorId);
+            this.setState({ currentFloorIndex: this.state.currentFloorIndex - 1, floorWiseBookings })
+        }
+    }
+
+    getNextFloor = async () => {
+        if (this.state.currentFloorIndex < this.state.floorStats.length - 1) {
+            let floorWiseBookings = this.state.bookingDetails.filter(i => i.isBooked && i.floor === this.state.floorStats[this.state.currentFloorIndex + 1]?.floorId);
+            this.setState({ currentFloorIndex: this.state.currentFloorIndex + 1, floorWiseBookings })
         }
     }
 
@@ -53,8 +93,6 @@ class Home extends React.Component {
                             </label>
                             <br></br>
                             <Select options={this.state.zones} isSearchable={true} onChange={e => this.setState({ selectedZone: e.value })} />
-
-
                         </div>
                         <div className="inlineDisplay vertiAlign mr-15" style={{ verticalAlign: "top" }}>
                             <label className='heading-label filterLabe'>
@@ -62,7 +100,6 @@ class Home extends React.Component {
                             </label>
                             <br></br>
                             <DatePicker selected={this.state.startDate} onChange={(date) => this.setState({ startDate: date })} />
-
                         </div>
                         <div className="inlineDisplay vertiAlign mr-15" style={{ verticalAlign: "top" }}>
                             <label className='heading-label'>
@@ -131,14 +168,14 @@ class Home extends React.Component {
                     <div className="mt-20" style={{ background: "grey", height: "30px" }}>
                         <div className='row col-md-12 ' style={{ height: "200px", marginTop: "20px" }}>
                             <div className=''>
-                                <span>{'<'} </span>
+                                <span onClick={this.getPreviousFloor}>{'<'} </span>
                             </div>
                             <div className='section2' style={{ height: "150px", margin: "30px", marginTop: "50px", marginLeft: "160px", width: "450px" }}>
                                 <div className='status-title'>
                                     <span class="title">Floor</span>
                                     <br>
                                     </br>
-                                    <h1>Eon 2_L3</h1>
+                                    <h1>{this.state.floorStats[this.state.currentFloorIndex]?.floor}</h1>
                                 </div>
                             </div>
                             <div className='section2' style={{ height: "150px", margin: "50px 30px 30px 0px", width: "450px" }}>
@@ -146,7 +183,7 @@ class Home extends React.Component {
                                     <span class="title">Total Allocation Seat</span>
                                     <br>
                                     </br>
-                                    <h1>120</h1>
+                                    <h1>{this.state.floorStats[this.state.currentFloorIndex]?.totalAllocated}</h1>
                                 </div>
                             </div>
                             <div className='section2' style={{ height: "150px", margin: "50px 30px 30px 0px", width: "450px" }}>
@@ -154,7 +191,7 @@ class Home extends React.Component {
                                     <span class="title" >Booked Seat</span>
                                     <br>
                                     </br>
-                                    <h1>78</h1>
+                                    <h1>{this.state.floorStats[this.state.currentFloorIndex]?.totalBooked}</h1>
                                 </div>
                             </div>
                             <div className='section2' style={{ height: "150px", margin: "50px 30px 30px 0px", width: "450px" }}>
@@ -162,14 +199,14 @@ class Home extends React.Component {
                                     <span class="title">Available Seat</span>
                                     <br>
                                     </br>
-                                    <h1>42</h1>
+                                    <h1>{this.state.floorStats[this.state.currentFloorIndex]?.totalAvailable}</h1>
                                 </div>
 
 
                             </div>
                             <div className=''>
                                 <div className=''>
-                                    <span> {'>'}</span>
+                                    <span onClick={this.getNextFloor}> {'>'}</span>
                                 </div>
                             </div>
                         </div>
@@ -182,6 +219,9 @@ class Home extends React.Component {
                             <div className="col-md-7" style={{ height: "400px", marginTop: "20px", background: "grey", marginRight: "30px", marginLeft: "50px" }}>
                             </div>
                             <div className="row col-md-4" style={{ height: "400px", marginTop: "20px", background: "grey", marginRight: "30px" }}>
+                                {this.state.floorWiseBookings.map(booking => (
+                                    <p key={booking.deskName}><span>{booking.name}</span><span>{booking.deskName}</span><span>{booking.isUsingSyatem}</span></p>
+                                ))}
                             </div>
                         </div>
 
