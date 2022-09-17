@@ -1,6 +1,6 @@
 import React from 'react';
 import * as EmployeesService from '../../services/EmployeesService'
-import Header from "../common/header/Header";
+import Header from "../common/Header/Header";
 
 class Employees extends React.Component {
     constructor(props) {

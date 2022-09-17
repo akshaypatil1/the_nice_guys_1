@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from "../common/header/Header";
+import Header from "../common/Header/Header";
 
 class Home extends React.Component {
     constructor(props) {
