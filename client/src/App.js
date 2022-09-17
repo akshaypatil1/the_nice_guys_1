@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Employees from './components/Employees/Employees';
+import Home from './components/Home/Home';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Employees />,
+  },
+  {
+    path: "/Home",
+    element: <Home/>,
   },
   {
     path: "/Employees",
