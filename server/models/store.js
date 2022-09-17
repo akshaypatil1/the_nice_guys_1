@@ -796,6 +796,608 @@ module.exports = {
             "roleId":3,
             "roleName":"EMP"
            }
-        ]
+        ],
+        Desks : [
+            {
+             "deskId": 1,
+             "deskLabel": "L1\/A\/01",
+             "floor": 1,
+             "zone": "A"
+            },
+            {
+             "deskId": 2,
+             "deskLabel": "L1\/A\/02",
+             "floor": 1,
+             "zone": "A"
+            },
+            {
+             "deskId": 3,
+             "deskLabel": "L1\/A\/03",
+             "floor": 1,
+             "zone": "A"
+            },
+            {
+             "deskId": 4,
+             "deskLabel": "L1\/A\/04",
+             "floor": 1,
+             "zone": "A"
+            },
+            {
+             "deskId": 5,
+             "deskLabel": "L1\/A\/05",
+             "floor": 1,
+             "zone": "A"
+            },
+            {
+             "deskId": 6,
+             "deskLabel": "L1\/A\/06",
+             "floor": 1,
+             "zone": "A"
+            },
+            {
+             "deskId": 7,
+             "deskLabel": "L1\/A\/07",
+             "floor": 1,
+             "zone": "A"
+            },
+            {
+             "deskId": 8,
+             "deskLabel": "L1\/A\/08",
+             "floor": 1,
+             "zone": "A"
+            },
+            {
+             "deskId": 9,
+             "deskLabel": "L1\/A\/09",
+             "floor": 1,
+             "zone": "A"
+            },
+            {
+             "deskId": 10,
+             "deskLabel": "L1\/A\/10",
+             "floor": 1,
+             "zone": "A"
+            },
+            {
+             "deskId": 11,
+             "deskLabel": "L1\/A\/11",
+             "floor": 1,
+             "zone": "A"
+            },
+            {
+             "deskId": 12,
+             "deskLabel": "L1\/A\/12",
+             "floor": 1,
+             "zone": "A"
+            },
+            {
+             "deskId": 13,
+             "deskLabel": "L1\/B\/01",
+             "floor": 1,
+             "zone": "B"
+            },
+            {
+             "deskId": 14,
+             "deskLabel": "L1\/B\/02",
+             "floor": 1,
+             "zone": "B"
+            },
+            {
+             "deskId": 15,
+             "deskLabel": "L1\/B\/03",
+             "floor": 1,
+             "zone": "B"
+            },
+            {
+             "deskId": 16,
+             "deskLabel": "L1\/B\/04",
+             "floor": 1,
+             "zone": "B"
+            },
+            {
+             "deskId": 17,
+             "deskLabel": "L1\/B\/05",
+             "floor": 1,
+             "zone": "B"
+            },
+            {
+             "deskId": 18,
+             "deskLabel": "L1\/B\/06",
+             "floor": 1,
+             "zone": "B"
+            },
+            {
+             "deskId": 19,
+             "deskLabel": "L1\/B\/07",
+             "floor": 1,
+             "zone": "B"
+            },
+            {
+             "deskId": 20,
+             "deskLabel": "L1\/B\/08",
+             "floor": 1,
+             "zone": "B"
+            },
+            {
+             "deskId": 21,
+             "deskLabel": "L1\/B\/09",
+             "floor": 1,
+             "zone": "B"
+            },
+            {
+             "deskId": 22,
+             "deskLabel": "L1\/B\/10",
+             "floor": 1,
+             "zone": "B"
+            },
+            {
+             "deskId": 23,
+             "deskLabel": "L1\/B\/11",
+             "floor": 1,
+             "zone": "B"
+            },
+            {
+             "deskId": 24,
+             "deskLabel": "L1\/B\/12",
+             "floor": 1,
+             "zone": "B"
+            },
+            {
+             "deskId": 25,
+             "deskLabel": "L1\/B\/13",
+             "floor": 1,
+             "zone": "B"
+            },
+            {
+             "deskId": 26,
+             "deskLabel": "L2\/A\/01",
+             "floor": 2,
+             "zone": "A"
+            },
+            {
+             "deskId": 27,
+             "deskLabel": "L2\/A\/02",
+             "floor": 2,
+             "zone": "A"
+            },
+            {
+             "deskId": 28,
+             "deskLabel": "L2\/A\/03",
+             "floor": 2,
+             "zone": "A"
+            },
+            {
+             "deskId": 29,
+             "deskLabel": "L2\/A\/04",
+             "floor": 2,
+             "zone": "A"
+            },
+            {
+             "deskId": 30,
+             "deskLabel": "L2\/A\/05",
+             "floor": 2,
+             "zone": "A"
+            },
+            {
+             "deskId": 31,
+             "deskLabel": "L2\/A\/06",
+             "floor": 2,
+             "zone": "A"
+            },
+            {
+             "deskId": 32,
+             "deskLabel": "L2\/A\/07",
+             "floor": 2,
+             "zone": "A"
+            },
+            {
+             "deskId": 33,
+             "deskLabel": "L2\/A\/08",
+             "floor": 2,
+             "zone": "A"
+            },
+            {
+             "deskId": 34,
+             "deskLabel": "L2\/A\/09",
+             "floor": 2,
+             "zone": "A"
+            },
+            {
+             "deskId": 35,
+             "deskLabel": "L2\/A\/10",
+             "floor": 2,
+             "zone": "A"
+            },
+            {
+             "deskId": 36,
+             "deskLabel": "L2\/A\/11",
+             "floor": 2,
+             "zone": "A"
+            },
+            {
+             "deskId": 37,
+             "deskLabel": "L2\/A\/12",
+             "floor": 2,
+             "zone": "A"
+            },
+            {
+             "deskId": 38,
+             "deskLabel": "L2\/B\/01",
+             "floor": 2,
+             "zone": "B"
+            },
+            {
+             "deskId": 39,
+             "deskLabel": "L2\/B\/02",
+             "floor": 2,
+             "zone": "B"
+            },
+            {
+             "deskId": 40,
+             "deskLabel": "L2\/B\/03",
+             "floor": 2,
+             "zone": "B"
+            },
+            {
+             "deskId": 41,
+             "deskLabel": "L2\/B\/04",
+             "floor": 2,
+             "zone": "B"
+            },
+            {
+             "deskId": 42,
+             "deskLabel": "L2\/B\/05",
+             "floor": 2,
+             "zone": "B"
+            },
+            {
+             "deskId": 43,
+             "deskLabel": "L2\/B\/06",
+             "floor": 2,
+             "zone": "B"
+            },
+            {
+             "deskId": 44,
+             "deskLabel": "L2\/B\/07",
+             "floor": 2,
+             "zone": "B"
+            },
+            {
+             "deskId": 45,
+             "deskLabel": "L2\/B\/08",
+             "floor": 2,
+             "zone": "B"
+            },
+            {
+             "deskId": 46,
+             "deskLabel": "L2\/B\/09",
+             "floor": 2,
+             "zone": "B"
+            },
+            {
+             "deskId": 47,
+             "deskLabel": "L2\/B\/10",
+             "floor": 2,
+             "zone": "B"
+            },
+            {
+             "deskId": 48,
+             "deskLabel": "L2\/B\/11",
+             "floor": 2,
+             "zone": "B"
+            },
+            {
+             "deskId": 49,
+             "deskLabel": "L2\/B\/12",
+             "floor": 2,
+             "zone": "B"
+            },
+            {
+             "deskId": 50,
+             "deskLabel": "L2\/B\/13",
+             "floor": 2,
+             "zone": "B"
+            },
+            {
+             "deskId": 51,
+             "deskLabel": "L3\/A\/01",
+             "floor": 3,
+             "zone": "A"
+            },
+            {
+             "deskId": 52,
+             "deskLabel": "L3\/A\/02",
+             "floor": 3,
+             "zone": "A"
+            },
+            {
+             "deskId": 53,
+             "deskLabel": "L3\/A\/03",
+             "floor": 3,
+             "zone": "A"
+            },
+            {
+             "deskId": 54,
+             "deskLabel": "L3\/A\/04",
+             "floor": 3,
+             "zone": "A"
+            },
+            {
+             "deskId": 55,
+             "deskLabel": "L3\/A\/05",
+             "floor": 3,
+             "zone": "A"
+            },
+            {
+             "deskId": 56,
+             "deskLabel": "L3\/A\/06",
+             "floor": 3,
+             "zone": "A"
+            },
+            {
+             "deskId": 57,
+             "deskLabel": "L3\/A\/07",
+             "floor": 3,
+             "zone": "A"
+            },
+            {
+             "deskId": 58,
+             "deskLabel": "L3\/A\/08",
+             "floor": 3,
+             "zone": "A"
+            },
+            {
+             "deskId": 59,
+             "deskLabel": "L3\/A\/09",
+             "floor": 3,
+             "zone": "A"
+            },
+            {
+             "deskId": 60,
+             "deskLabel": "L3\/A\/10",
+             "floor": 3,
+             "zone": "A"
+            },
+            {
+             "deskId": 61,
+             "deskLabel": "L3\/A\/11",
+             "floor": 3,
+             "zone": "A"
+            },
+            {
+             "deskId": 62,
+             "deskLabel": "L3\/A\/12",
+             "floor": 3,
+             "zone": "A"
+            },
+            {
+             "deskId": 63,
+             "deskLabel": "L3\/B\/01",
+             "floor": 3,
+             "zone": "B"
+            },
+            {
+             "deskId": 64,
+             "deskLabel": "L3\/B\/02",
+             "floor": 3,
+             "zone": "B"
+            },
+            {
+             "deskId": 65,
+             "deskLabel": "L3\/B\/03",
+             "floor": 3,
+             "zone": "B"
+            },
+            {
+             "deskId": 66,
+             "deskLabel": "L3\/B\/04",
+             "floor": 3,
+             "zone": "B"
+            },
+            {
+             "deskId": 67,
+             "deskLabel": "L3\/B\/05",
+             "floor": 3,
+             "zone": "B"
+            },
+            {
+             "deskId": 68,
+             "deskLabel": "L3\/B\/06",
+             "floor": 3,
+             "zone": "B"
+            },
+            {
+             "deskId": 69,
+             "deskLabel": "L3\/B\/07",
+             "floor": 3,
+             "zone": "B"
+            },
+            {
+             "deskId": 70,
+             "deskLabel": "L3\/B\/08",
+             "floor": 3,
+             "zone": "B"
+            },
+            {
+             "deskId": 71,
+             "deskLabel": "L3\/B\/09",
+             "floor": 3,
+             "zone": "B"
+            },
+            {
+             "deskId": 72,
+             "deskLabel": "L3\/B\/10",
+             "floor": 3,
+             "zone": "B"
+            },
+            {
+             "deskId": 73,
+             "deskLabel": "L3\/B\/11",
+             "floor": 3,
+             "zone": "B"
+            },
+            {
+             "deskId": 74,
+             "deskLabel": "L3\/B\/12",
+             "floor": 3,
+             "zone": "B"
+            },
+            {
+             "deskId": 75,
+             "deskLabel": "L3\/B\/13",
+             "floor": 3,
+             "zone": "B"
+            },
+            {
+             "deskId": 76,
+             "deskLabel": "L4\/A\/01",
+             "floor": 4,
+             "zone": "A"
+            },
+            {
+             "deskId": 77,
+             "deskLabel": "L4\/A\/02",
+             "floor": 4,
+             "zone": "A"
+            },
+            {
+             "deskId": 78,
+             "deskLabel": "L4\/A\/03",
+             "floor": 4,
+             "zone": "A"
+            },
+            {
+             "deskId": 79,
+             "deskLabel": "L4\/A\/04",
+             "floor": 4,
+             "zone": "A"
+            },
+            {
+             "deskId": 80,
+             "deskLabel": "L4\/A\/05",
+             "floor": 4,
+             "zone": "A"
+            },
+            {
+             "deskId": 81,
+             "deskLabel": "L4\/A\/06",
+             "floor": 4,
+             "zone": "A"
+            },
+            {
+             "deskId": 82,
+             "deskLabel": "L4\/A\/07",
+             "floor": 4,
+             "zone": "A"
+            },
+            {
+             "deskId": 83,
+             "deskLabel": "L4\/A\/08",
+             "floor": 4,
+             "zone": "A"
+            },
+            {
+             "deskId": 84,
+             "deskLabel": "L4\/A\/09",
+             "floor": 4,
+             "zone": "A"
+            },
+            {
+             "deskId": 85,
+             "deskLabel": "L4\/A\/10",
+             "floor": 4,
+             "zone": "A"
+            },
+            {
+             "deskId": 86,
+             "deskLabel": "L4\/A\/11",
+             "floor": 4,
+             "zone": "A"
+            },
+            {
+             "deskId": 87,
+             "deskLabel": "L4\/A\/12",
+             "floor": 4,
+             "zone": "A"
+            },
+            {
+             "deskId": 88,
+             "deskLabel": "L4\/B\/01",
+             "floor": 4,
+             "zone": "B"
+            },
+            {
+             "deskId": 89,
+             "deskLabel": "L4\/B\/02",
+             "floor": 4,
+             "zone": "B"
+            },
+            {
+             "deskId": 90,
+             "deskLabel": "L4\/B\/03",
+             "floor": 4,
+             "zone": "B"
+            },
+            {
+             "deskId": 91,
+             "deskLabel": "L4\/B\/04",
+             "floor": 4,
+             "zone": "B"
+            },
+            {
+             "deskId": 92,
+             "deskLabel": "L4\/B\/05",
+             "floor": 4,
+             "zone": "B"
+            },
+            {
+             "deskId": 93,
+             "deskLabel": "L4\/B\/06",
+             "floor": 4,
+             "zone": "B"
+            },
+            {
+             "deskId": 94,
+             "deskLabel": "L4\/B\/07",
+             "floor": 4,
+             "zone": "B"
+            },
+            {
+             "deskId": 95,
+             "deskLabel": "L4\/B\/08",
+             "floor": 4,
+             "zone": "B"
+            },
+            {
+             "deskId": 96,
+             "deskLabel": "L4\/B\/09",
+             "floor": 4,
+             "zone": "B"
+            },
+            {
+             "deskId": 97,
+             "deskLabel": "L4\/B\/10",
+             "floor": 4,
+             "zone": "B"
+            },
+            {
+             "deskId": 98,
+             "deskLabel": "L4\/B\/11",
+             "floor": 4,
+             "zone": "B"
+            },
+            {
+             "deskId": 99,
+             "deskLabel": "L4\/B\/12",
+             "floor": 4,
+             "zone": "B"
+            },
+            {
+             "deskId": 100,
+             "deskLabel": "L4\/B\/13",
+             "floor": 4,
+             "zone": "B"
+            }
+           ]
     }
  };
