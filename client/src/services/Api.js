@@ -5,4 +5,14 @@ const instance = axios.create({
     headers: { 'Content-Type': 'application/json' }
 });
 
+instance.interceptors.request.use(function (config) {
+    let token = sessionStorage.getItem('token');
+    if(token){
+    config.headers.Authorization = `Bearer ${token}`}
+    return config;
+  }, function (error) {
+    // Do something with request error
+    return Promise.reject(error);
+  });
+
 export default instance;
