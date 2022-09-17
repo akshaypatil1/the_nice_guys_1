@@ -1,4 +1,5 @@
 const express = require('express');
+const Desk = require('../controllers/Desk');
 const app = express();
 const route = express.Router();
 
@@ -11,6 +12,9 @@ route.route('/employee/:id?')
     .post(Employees.post)
     .put(Employees.put)
     .delete(Employees.del);
+
+route.route("/getDropdownsForDesks")
+    .get(Desk.getFloorDropdowns);
 
 route.route('/login').post(Public.login);
 module.exports = route;

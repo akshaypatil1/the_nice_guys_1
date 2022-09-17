@@ -6,7 +6,8 @@ module.exports = {
              "name": "Aniket Naradekar",
              "emailId": "aniket@cs.com",
              "roleId": 1,
-             "oeCode": "CDQU"
+             "oeCode": "CDQU",
+             "managersPid":null
             },
             {
              "pid": 1100,
@@ -1427,6 +1428,40 @@ module.exports = {
                 "allocatedOn":"",
                 "fromDate":"",
                 "toDate":""
+            }
+        ],
+        DeskMasterDetails : [
+            {
+                "key":"floor",
+                "value":1
+            },
+            {
+                "key":"floor",
+                "value":2
+            },
+            {
+                "key":"floor",
+                "value":3
+            },
+            {
+                "key":"floor",
+                "value":4
+            },
+            {
+                "key":"zone",
+                "value":"A"
+            },
+            {
+                "key":"zone",
+                "value":"B"
+            },
+            {
+                "key":"zone",
+                "value":"C"
+            },
+            {
+                "key":"zone",
+                "value":"D"
             }
         ]
     }
