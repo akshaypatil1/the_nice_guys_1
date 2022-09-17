@@ -1,12 +1,16 @@
 import React from 'react';
 import * as EmployeesService from '../../services/EmployeesService'
 import Header from "../common/Header/Header";
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
 
 class Employees extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            employees: []
+            employees: [],
+            startDate: new Date(),
         }
     }
 
@@ -28,6 +32,7 @@ class Employees extends React.Component {
             <>
             <Header active="Employees"/>
                 <div>hello</div>
+                <DatePicker selected={this.state.startDate} onChange={(date) => this.setState({startDate: date})} />
                 <ul>
                     {this.state.employees.map(employee => (
                         <li key={employee.id}>{employee.name}</li>
