@@ -1,11 +1,11 @@
 const express = require('express');
-const Desk = require('../controllers/Desk');
 const app = express();
 const route = express.Router();
 
 let Employees = require('../controllers/Employees');
+let Bookings = require('../controllers/Bookings');
 let Public = require('../controllers/Public');
-
+const Desk = require('../controllers/Desk');
 
 route.route('/employee/:id?')
     .get(Employees.get)
@@ -15,6 +15,12 @@ route.route('/employee/:id?')
 
 route.route("/getDropdownsForDesks")
     .get(Desk.getFloorDropdowns);
+
+route.route('/bookings/:pid?')
+    .get(Bookings.get)
+    .post(Bookings.getBookings)
+// .put(Bookings.put)
+// .delete(Bookings.del);
 
 route.route('/login').post(Public.login);
 module.exports = route;
