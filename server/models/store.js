@@ -1398,6 +1398,36 @@ module.exports = {
              "floor": 4,
              "zone": "B"
             }
-           ]
+           ],
+        ZoneAllocations : [{
+            "pid":"",
+            "floor":"",
+            "zone":"",
+            "deskName":"",
+            "fromDate":"",
+            "toDate":""
+        }],
+        DeskAllocations : [{
+            "pid":"",
+            "floor":"",
+            "zone":"",
+            "deskName":"",
+            "allocatedBy":"",
+            "allocatedOn":"",
+            "fromDate":"",
+            "toDate":""
+        }],
+        Bookings : [
+            {
+                "pid":"",
+                "floor":"",
+                "zone":"",
+                "deskName":"",
+                "allocatedBy":"",
+                "allocatedOn":"",
+                "fromDate":"",
+                "toDate":""
+            }
+        ]
     }
  };
