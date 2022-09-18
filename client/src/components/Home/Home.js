@@ -93,7 +93,7 @@ class Home extends React.Component {
         return (
             <>
                 <Header />
-                <div className='container-fluid' style={{ marginLeft: "50px" }}>
+                <div className='container-fluid' style={{ marginLeft: "50px",marginTop:"1px" }}>
                     <div className="filterFormDiv col-md-12">
                         <div className='row'>
                             <div className='col-md-2'>

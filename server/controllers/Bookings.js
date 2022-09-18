@@ -99,7 +99,6 @@ function BookingsController() {
                 isBooked: false,
                 isUsingSyatem: true
             }
-            console.log(i.deskName, _getBookingsData, getBookingInfo);
             if (getBookingInfo) {
                 result.pid = getBookingInfo.pid;
                 result.name = getBookingInfo.name;
