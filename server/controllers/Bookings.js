@@ -40,6 +40,21 @@ function BookingsController() {
         success(res, 200, zoneList, next) 
     };
 
+    this.bookDesk = function(req,res,next){
+        let dataObj = {
+            "pid": 1320,
+                "floor": 2,
+                "zone": "B",
+                "deskName": "L2/B/06",
+                "allocatedBy": "1100",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+        }
+        store.store.Bookings.push(dataObj);
+        success(res, 200, "Booked Successufully", next) 
+    }
+
     this.getBookings = function (req, res, next) {
 
         let getAllChildData = getAllChild(parseInt(req.body.pid));

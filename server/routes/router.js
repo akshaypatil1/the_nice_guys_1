@@ -28,5 +28,8 @@ route.route("/getFloorsList")
 route.route("/getZoneList")
 .get(Bookings.getAssignedZones);
 
+route.route("/bookDesk")
+.post(Bookings.bookDesk);
+
 route.route('/login').post(Public.login);
 module.exports = route;
