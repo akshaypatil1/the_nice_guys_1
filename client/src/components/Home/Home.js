@@ -13,6 +13,7 @@ import less from "../../assests/less.png";
 import greater from "../../assests/greater.png";
 import Add from "../../assests/Add.png";
 import { DropdownMenu, MenuItem } from 'react-bootstrap-dropdown-menu';
+import { Calendar } from 'primereact/calendar';
 
 
 class Home extends React.Component {
@@ -30,6 +31,7 @@ class Home extends React.Component {
             bookingDetails: [],
             currentFloorIndex: 0,
             floorWiseBookings: [],
+            date1: null,
         }
     }
 
@@ -107,14 +109,14 @@ class Home extends React.Component {
                                     From Date
                                 </label>
                                 <br></br>
-                                <DatePicker selected={this.state.startDate} onChange={(date) => this.setState({ startDate: date })} />
+                                <Calendar value={this.state.date1} onChange={(e) => this.setState({ date1: e.value })}></Calendar>
                             </div>
                             <div className="inlineDisplay vertiAlign mr-15  wid-200" style={{ verticalAlign: "top" }}>
                                 <label className='heading-label'>
                                     TO Date
                                 </label>
                                 <br></br>
-                                <DatePicker selected={this.state.toDate} onChange={(date) => this.setState({ toDate: date })} />
+                                <Calendar value={this.state.date1} onChange={(e) => this.setState({ date1: e.value })}></Calendar>
 
                             </div>
                         </div>
@@ -172,6 +174,7 @@ class Home extends React.Component {
 
 
                             </button>
+                        </div>
                         </div>
 
                         <div className="mt-20">
@@ -233,27 +236,27 @@ class Home extends React.Component {
 
                         <div className="col-md-12" style={{ marginTop: "50px", marginLeft: "50px" }}>
                             <div className='row'>
-                                <div className="col-md-7" style={{ height: "400px", marginTop: "20px", marginRight: "30px", marginLeft: "50px" }}>
+                                <div className="col-md-7" style={{ height: "400px", marginTop: "20px", marginRight: "30px", marginLeft: "50px"}}>
                                     <img className="logoCs" src={floorplan} alt="Floor Planning" />
                                 </div>
-                                <div className="row col-md-4" style={{ height: "400px", marginTop: "20px", background: "grey", marginRight: "30px" }}>
+                                <div className="row col-md-4" style={{ height: "400px", marginTop: "20px", background: "white", marginRight: "30px",overflow:"scroll",verticalScroll:"None"  }}>
                                     <table>
                                         <thead>
-                                            <th>Employee Name</th>
-                                            <th>Seat No.</th>
-                                            <th>Date</th>
+                                            <th style={{ fontSize:"20px"}}>Employee Name</th>
+                                            <th style={{ fontSize:"20px"}}>Seat No.</th>
+                                            <th style={{ fontSize:"20px"}}>Date</th>
                                             <th></th>
                                         </thead>
                                         <tbody>
                                             {this.state.floorWiseBookings.map(booking => (
                                                 <tr>
-                                                    <td>
+                                                    <td style={{ fontSize:"16px"}}>
                                                         {booking.name}
                                                     </td>
-                                                    <td>
+                                                    <td style={{ fontSize:"16px"}}>
                                                         {booking.deskName}
                                                     </td>
-                                                    <td>
+                                                    <td style={{ fontSize:"16px"}}>
                                                         18/09/2022
                                                     </td>
                                                     <td>
@@ -267,25 +270,14 @@ class Home extends React.Component {
                                             ))}
                                         </tbody>
                                     </table>
-                                    {/* {this.state.floorWiseBookings.map(booking => (
-                                        <p key={booking.deskName}>
-                                            <span>{booking.name}</span>
-                                            <span>{booking.deskName}</span>
-                                            <span>{booking.isUsingSyatem}</span>
-                                            <DropdownMenu position='right' triggerType='icon' trigger='glyphicon glyphicon-option-vertical'>
-                                                <MenuItem text="View Details" />
-                                                <MenuItem text="View Attendees" />
-                                                <MenuItem text="Monthly Details" />
-                                            </DropdownMenu>
-                                        </p>
-                                    ))} */}
+                                  
                                 </div>
                             </div>
 
 
                         </div>
                     </div >
-                </div>
+               
 
             </>
         );

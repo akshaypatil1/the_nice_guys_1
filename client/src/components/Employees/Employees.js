@@ -8,12 +8,14 @@ import Select from 'react-select'
 import { Calendar } from 'primereact/calendar';
 import { DropdownMenu, MenuItem } from 'react-bootstrap-dropdown-menu';
 
+
 class Employees extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             employees: [],
             startDate: new Date(),
+            date1: null,
         }
         this.options = [
             { value: 'chocolate', label: 'Chocolate' },
@@ -39,8 +41,8 @@ class Employees extends React.Component {
         return (
             <>
                 <Header active="Employees" />
-                <div>hello</div>
-                {/* <Select options={this.options} /> */}
+                <div className='container-fluid' style={{ marginLeft: "50px" }}>
+                <Calendar value={this.state.date1} onChange={(e) => this.setState({ date1: e.value })}></Calendar>
                 <DatePicker selected={this.state.startDate} onChange={(date) => this.setState({ startDate: date })} />
                 <Calendar value={this.state.startDate} onChange={(e) => this.setState(e.value)}></Calendar>
                 <DropdownMenu position='right' triggerType='icon' trigger='glyphicon glyphicon-option-vertical'>
@@ -53,6 +55,7 @@ class Employees extends React.Component {
                         <li key={employee.id}>{employee.name}</li>
                     ))}
                 </ul> */}
+                </div>
             </>
         );
     }

@@ -23,6 +23,7 @@ import { RiPencilLine } from "react-icons/ri";
 import { BiCog } from "react-icons/bi";
 import CSsymbol from "../../../assests/CSsymbol.png";
 
+
 //import sidebar css from react-pro-sidebar module and our custom css
 import "react-pro-sidebar/dist/css/styles.css";
 import "./NavigationBar.css";
@@ -62,6 +63,16 @@ class NavigationBar extends React.Component {
                  activeclassName="navbar_link_active" 
                  className="mt-20 mb-20"
                   to="/Employees"
+>
+                  <MenuItem icon={<FaList />}></MenuItem>
+                
+               
+                </NavLink>
+                <NavLink
+                 // excat
+                 activeclassName="navbar_link_active" 
+                 className="mt-20 mb-20"
+                  to="/Allocation"
 >
                   <MenuItem icon={<FaList />}></MenuItem>
                 
