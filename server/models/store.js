@@ -1537,43 +1537,43 @@ module.exports = {
                 "deskName": "L1/A/05"
             },
             {
-                "pid": 1100,
+                "pid": 1300,
                 "floor": 1,
                 "zone": "A",
                 "deskName": "L1/A/06"
             },
             {
-                "pid": 1100,
+                "pid": 1300,
                 "floor": 1,
                 "zone": "A",
                 "deskName": "L1/A/07"
             },
             {
-                "pid": 1100,
+                "pid": 1300,
                 "floor": 1,
                 "zone": "A",
                 "deskName": "L1/A/08"
             },
             {
-                "pid": 1100,
+                "pid": 1300,
                 "floor": 1,
                 "zone": "A",
                 "deskName": "L1/A/09"
             },
             {
-                "pid": 1100,
+                "pid": 1300,
                 "floor": 1,
                 "zone": "A",
                 "deskName": "L1/A/10"
             },
             {
-                "pid": 1100,
+                "pid": 1300,
                 "floor": 1,
                 "zone": "A",
                 "deskName": "L1/A/11"
             },
             {
-                "pid": 1100,
+                "pid": 1300,
                 "floor": 1,
                 "zone": "A",
                 "deskName": "L1/A/12"
@@ -2033,6 +2033,76 @@ module.exports = {
                 "floor": 1,
                 "zone": "B",
                 "deskName": "L1/B/13",
+                "allocatedBy": "1300",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+            },
+            {
+                "pid": 1314,
+                "floor": 1,
+                "zone": "B",
+                "deskName": "L1/A/06",
+                "allocatedBy": "1300",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+            },
+            {
+                "pid": 1315,
+                "floor": 1,
+                "zone": "B",
+                "deskName": "L1/A/07",
+                "allocatedBy": "1300",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+            },
+            {
+                "pid": 1316,
+                "floor": 1,
+                "zone": "B",
+                "deskName": "L1/A/08",
+                "allocatedBy": "1300",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+            },
+            {
+                "pid": 1317,
+                "floor": 1,
+                "zone": "B",
+                "deskName": "L1/A/09",
+                "allocatedBy": "1300",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+            },
+            {
+                "pid": 1318,
+                "floor": 1,
+                "zone": "B",
+                "deskName": "L1/A/10",
+                "allocatedBy": "1300",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+            },
+            {
+                "pid": 1319,
+                "floor": 1,
+                "zone": "B",
+                "deskName": "L1/A/11",
+                "allocatedBy": "1300",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+            },
+            {
+                "pid": 1320,
+                "floor": 1,
+                "zone": "B",
+                "deskName": "L1/A/12",
                 "allocatedBy": "1300",
                 "allocatedOn": "18/09/2022",
                 "fromDate": "18/09/2022",
