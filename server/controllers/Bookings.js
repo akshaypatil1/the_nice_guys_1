@@ -149,18 +149,6 @@ function BookingsController() {
                 "floor": 3,
                 "zone": "B",
                 "deskName": "L3/B/06"
-            },
-            {
-                "pid": 1300,
-                "floor": 3,
-                "zone": "B",
-                "deskName": "L3/B/07"
-            },
-            {
-                "pid": 1300,
-                "floor": 3,
-                "zone": "B",
-                "deskName": "L3/B/08"
             }
         ]
         store.store.DeskAllocations.push(...dataObj);
