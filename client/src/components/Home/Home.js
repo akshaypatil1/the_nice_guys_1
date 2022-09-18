@@ -20,6 +20,7 @@ import { Dropdown } from 'primereact/dropdown';
 import seat_Available from "../../assests/seat_Available.png";
 import BG from "../../assests/BG.png";
 import book_seat from "../../assests/book_seat.png";
+import { Link } from 'react-router-dom'
 
 class Home extends React.Component {
     constructor(props) {
@@ -123,7 +124,6 @@ class Home extends React.Component {
                                 <div class="form-group">
                                     <button
                                         id="floorSearch"
-                                        onclick={{}}
                                         classname="primarySubmitButton btn-primary"
                                         style={{
                                             color: "black",
@@ -140,12 +140,13 @@ class Home extends React.Component {
                                             width: "100%"
                                         }}
                                     >
+                                        <Link to="/Allocation" style={{"text-decoration": "none", "color": "black"}}>
                                         Search
                                         <img
                                             className='btnArrowIcon ml-10'
                                             src={Search_icon}
                                             alt="arrowicon"
-                                        />
+                                        /></Link>
                                     </button>
                                 </div>
                             </div>

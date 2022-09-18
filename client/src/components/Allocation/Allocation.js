@@ -11,30 +11,39 @@ import Search_icon from "../../assests/Search_icon.png";
 
 import Add from "../../assests/Add.png";
 import "../Home/Home.css";
+import { Dropdown } from 'primereact/dropdown';
 
 import Create from "../../assests/Create.png";
-import Floorplan from "../../assests/floorplan.png";
+import Selection_floor_plan_01 from "../../assests/Selection floor plan01.png";
+import Selection_floor_plan_02 from "../../assests/Selection floor plan02.png";
+import Selection_floor_plan_03 from "../../assests/Selection floor plan03.png";
+import Selection_floor_plan_04 from "../../assests/Selection floor plan04.png";
+import Selection_floor_plan_05 from "../../assests/Selection floor plan05.png";
+
 
 class Allocation extends React.Component {
-   
+
     constructor(props) {
         super(props);
         this.state = {
             employees: [],
             startDate: new Date(),
+            mouseClick: 0,
         }
         this.options = [
             { value: 'chocolate', label: 'Chocolate' },
             { value: 'strawberry', label: 'Strawberry' },
             { value: 'vanilla', label: 'Vanilla' }
         ]
-        
-    }
 
-   
+    }
 
     componentDidMount() {
         this.fetchEmployees()
+    }
+
+    onImgClick = (mouseClick) => {
+        this.setState({ mouseClick })
     }
 
     fetchEmployees = async () => {
@@ -46,7 +55,7 @@ class Allocation extends React.Component {
         }
     }
 
-    
+
 
     render() {
         return (
@@ -54,129 +63,151 @@ class Allocation extends React.Component {
                 <Header active="Employees" />
                 <div className='container-fluid' style={{ marginLeft: "50px", background: "#E8E8E8" }}>
                     <div className="filterFormDiv col-md-12">
-                        <div className="filterContainer" style={{ marginLeft: "30px", textAlign: "justify" }}>
-                            <div className="inlineDisplay lign mr-30  wid-200">
-                                <label className='heading-label'>
-                                    Floor
-                                </label>
-                                <br></br>
-                                <Select options={this.state.floors} isSearchable={true} onChange={e => this.setState({ selectedFloor: e.value })} />
+                        <div className='row'>
+                            <div className='col-md-2'>
+                                <div class="form-group">
+                                    <label for="usr" style={{ "float": "left" }}>Floor:</label><br />
+                                    <Dropdown style={{ width: "100%" }} optionLabel="label" optionValue="value" value={this.state.selectedFloor} options={this.state.floors} onChange={(e) => this.setState({ selectedFloor: e.value })} placeholder="Select a floor" />
+                                </div>
                             </div>
-                            <div className="inlineDisplay vertiAlign mr-15  wid-200">
-                                <label className='heading-label'>
-                                    Zone
-                                </label>
-                                <br></br>
-                                <Select options={this.state.zones} isSearchable={true} onChange={e => this.setState({ selectedZone: e.value })} />
+                            <div className='col-md-2'>
+                                <div class="form-group">
+                                    <label for="usr" style={{ "float": "left" }}>Zone:</label><br />
+                                    <Dropdown style={{ width: "100%" }} optionLabel="label" optionValue="value" value={this.state.selectedZone} options={this.state.zones} onChange={(e) => this.setState({ selectedZone: e.value })} placeholder="Select a zone" />
+                                </div>
                             </div>
-                            <div className="inlineDisplay vertiAlign mr-15  wid-200" style={{ verticalAlign: "top" }}>
-                                <label className='heading-label filterLabe'>
-                                    From Date
-                                </label>
-                                <br></br>
-                                <DatePicker selected={this.state.startDate} onChange={(date) => this.setState({ startDate: date })} />
+                            <div className='col-md-2'>
+                                <div class="form-group">
+                                    <label for="usr" style={{ "float": "left" }}>From Date:</label><br />
+                                    <Calendar style={{ width: "100%" }} value={this.state.startDate} onChange={(e) => this.setState({ startDate: e.value })}></Calendar>
+                                </div>
                             </div>
-                            <div className="inlineDisplay vertiAlign mr-15  wid-200" style={{ verticalAlign: "top" }}>
-                                <label className='heading-label'>
-                                    TO Date
-                                </label>
-                                <br></br>
-                                <DatePicker selected={this.state.toDate} onChange={(date) => this.setState({ toDate: date })} />
-
+                            <div className='col-md-2'>
+                                <div class="form-group">
+                                    <label for="usr" style={{ "float": "left" }}>To Date:</label><br />
+                                    <Calendar style={{ width: "100%" }} value={this.state.toDate} onChange={(e) => this.setState({ toDate: e.value })}></Calendar>
+                                </div>
                             </div>
-                        </div>
-                        <div className="inlineDisplay verMiddle right-align-run col-md-3" style={{ verticalAlign: "top" }}>
-                            <button
-                                id="floorSearch"
-                                onclick={{}}
-                                classname="primarySubmitButton btn-primary wid-150"
-                                style={{
-                                    color: "black",
-                                    background: "white",
-                                    border: "none",
-                                    fontSize: "18px",
-                                    fontFamily: "Credit Suisse Type",
-                                    height: "50px",
-                                    width: "150px",
-                                    marginRight: "20px",
-                                    padding: "10px",
-                                    marginTop: "20px",
-                                    border: "1px solid grey"
-                                }}
-                            >
-                                Search
-
-                                <img
-                                    className='btnArrowIcon ml-10'
-                                    src={Search_icon}
-                                    alt="arrowicon"
-                                />
-                            </button>
-
-                            <button
-                                id="floorSearch"
-                                onclick={{}}
-                                classname="primarySubmitButton btn-primary wid-150 mr-30"
-                                style={{
-                                    color: "white",
-                                    background: "black",
-                                    border: "none",
-                                    fontSize: "18px",
-                                    fontFamily: "Credit Suisse Type",
-                                    height: "50px",
-                                    width: "250px",
-                                    marginRight: "20px",
-                                    padding: "10px",
-                                    marginTop: "20px",
-                                }}
-                            >
-                                <img
-                                    className='btnArrowIcon mr-10'
-                                    src={Add}
-                                    alt="arrowicon"
-                                />
-                                Create Desk Allocation
-
-
-                            </button>
+                            <div className='col-md-2'>
+                                <div class="form-group">
+                                    <button
+                                        id="floorSearch"
+                                        classname="primarySubmitButton btn-primary"
+                                        style={{
+                                            color: "black",
+                                            background: "white",
+                                            border: "none",
+                                            fontSize: "18px",
+                                            fontFamily: "Credit Suisse Type",
+                                            height: "50px",
+                                            width: "150px",
+                                            marginRight: "20px",
+                                            padding: "10px",
+                                            marginTop: "22px",
+                                            border: "1px solid grey",
+                                            width: "100%"
+                                        }}
+                                    >
+                                        {/* <Link to="/Allocation" style={{"text-decoration": "none", "color": "black"}}> */}
+                                        Search
+                                        <img
+                                            className='btnArrowIcon ml-10'
+                                            src={Search_icon}
+                                            alt="arrowicon"
+                                        />
+                                        {/* </Link> */}
+                                    </button>
+                                </div>
+                            </div>
+                            <div className='col-md-2'>
+                                <div class="form-group">
+                                    <button
+                                        id="floorSearch"
+                                        onclick={{}}
+                                        classname="primarySubmitButton btn-primary"
+                                        style={{
+                                            color: "white",
+                                            background: "black",
+                                            border: "none",
+                                            fontSize: "18px",
+                                            fontFamily: "Credit Suisse Type",
+                                            height: "50px",
+                                            width: "100%",
+                                            marginTop: "22px",
+                                            marginRight: "15px",
+                                            width: "100%"
+                                        }}
+                                    >
+                                        <img
+                                            className='btnArrowIcon mr-10'
+                                            src={Add}
+                                            alt="arrowicon"
+                                        />
+                                        Create Desk Allocation
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className='row' style={{marginTop:"30px",marginRight:"70px",marginLeft:"30px",marginBottom: "30px" }}>
+                    <div className='row' style={{ marginTop: "30px", marginRight: "70px", marginLeft: "30px", marginBottom: "30px" }}>
                         <img
                             className=''
                             src={Create}
                             alt="arrowicon"
                         />
                     </div>
-                    <button
-                                id="floorSearch"
-                                onclick={{}}
-                                classname="primarySubmitButton btn-primary wid-150 mr-30"
-                                style={{
-                                    color: "white",
-                                    background: "black",
-                                    border: "none",
-                                    fontSize: "20px",
-                                    fontFamily: "Credit Suisse Type",
-                                    height: "50px",
-                                    width: "250px",
-                                    marginLeft: "20px",
-                                    padding: "10px",
-                                    marginTop: "20px",
-                                }}
-                            >   
-                                Get Floor Plan
-                            </button>
-
-                </div>
-
-                <div className='row' style={{marginTop:"30px",marginRight:"70px",marginLeft:"30px",marginBottom: "30px" }}>
-                        <img
-                            className=''
-                            src={Floorplan}
-                            alt="arrowicon"
-                        />
+                    <div>
+                        <button
+                            id=""
+                            onClick={e => this.onImgClick(1)}
+                            classname="primarySubmitButton btn-primary wid-150 mr-30"
+                            style={{
+                                color: "white",
+                                background: "black",
+                                border: "none",
+                                fontSize: "20px",
+                                fontFamily: "Credit Suisse Type",
+                                height: "50px",
+                                width: "250px",
+                                marginLeft: "20px",
+                                padding: "10px",
+                                marginTop: "20px",
+                            }}
+                        >
+                            Get Floor Plan
+                        </button>
                     </div>
+                    <div className='row' style={{ marginTop: "30px", marginRight: "70px", marginLeft: "30px", marginBottom: "30px" }}>
+                        {this.state.mouseClick === 1 ?
+                            <img
+                                className=''
+                                src={Selection_floor_plan_01}
+                                alt="arrowicon"
+                                onClick={e => this.onImgClick(2)}
+                            /> : this.state.mouseClick === 2 ?
+                                <img
+                                    className=''
+                                    src={Selection_floor_plan_02}
+                                    alt="arrowicon"
+                                    onClick={e => this.onImgClick(3)}
+                                /> : this.state.mouseClick === 3 ? <img
+                                    className=''
+                                    src={Selection_floor_plan_03}
+                                    alt="arrowicon"
+                                    onClick={e => this.onImgClick(4)}
+                                /> : this.state.mouseClick === 4 ? <img
+                                    className=''
+                                    src={Selection_floor_plan_04}
+                                    alt="arrowicon"
+                                    onClick={e => this.onImgClick(5)}
+                                /> : this.state.mouseClick === 5 ? <img
+                                    className=''
+                                    src={Selection_floor_plan_05}
+                                    alt="arrowicon"
+                                /> : ""}
+
+                    </div>
+                </div>
             </>
         );
     }
