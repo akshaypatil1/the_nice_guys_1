@@ -133,7 +133,7 @@ module.exports = {
                 "emailId": "kushal@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
-                "birthDate": null,
+                "birthDate": "18/09/2022",
                 "managersPid": 1300
             },
             {
@@ -177,7 +177,9 @@ module.exports = {
                 "name": "Monalisha Panda",
                 "emailId": "mona@cs.com",
                 "roleId": "DIR",
-                "oeCode": "MBCC"
+                "oeCode": "MBCC",
+                "birthDate" :"18/09/2022",
+                "managersPid" : null
             },
             {
                 "pid": 2100,
