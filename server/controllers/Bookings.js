@@ -41,17 +41,131 @@ function BookingsController() {
     };
 
     this.bookDesk = function(req,res,next){
-        let dataObj = {
-            "pid": 1320,
-                "floor": 2,
+        let dataObj = [
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "A",
+                "deskName": "L3/A/01"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "A",
+                "deskName": "L3/A/02"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "A",
+                "deskName": "L3/A/03"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "A",
+                "deskName": "L3/A/04"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "A",
+                "deskName": "L3/A/05"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "A",
+                "deskName": "L3/A/06"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "A",
+                "deskName": "L3/A/07"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "A",
+                "deskName": "L3/A/08"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "A",
+                "deskName": "L3/A/09"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "A",
+                "deskName": "L3/A/10"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "A",
+                "deskName": "L3/A/11"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "A",
+                "deskName": "L3/A/12"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
                 "zone": "B",
-                "deskName": "L2/B/06",
-                "allocatedBy": "1100",
-                "allocatedOn": "18/09/2022",
-                "fromDate": "18/09/2022",
-                "toDate": "18/09/2022"
-        }
-        store.store.Bookings.push(dataObj);
+                "deskName": "L3/B/01"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "B",
+                "deskName": "L3/B/02"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "B",
+                "deskName": "L3/B/03"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "B",
+                "deskName": "L3/B/04"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "B",
+                "deskName": "L3/B/05"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "B",
+                "deskName": "L3/B/06"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "B",
+                "deskName": "L3/B/07"
+            },
+            {
+                "pid": 1300,
+                "floor": 3,
+                "zone": "B",
+                "deskName": "L3/B/08"
+            }
+        ]
+        store.store.DeskAllocations.push(...dataObj);
+
+        console.log("INSERT : ", store.store.DeskAllocations);
         success(res, 200, "Booked Successufully", next) 
     }
 
@@ -87,7 +201,7 @@ function BookingsController() {
             })
         }
         let getDeskAllocatedData = getAllSeatsAllocated(myPids);
-
+        console.log("getDeskAllocatedData", store.store.DeskAllocations.filter(i => myPids.includes(i.pid)).length, getDeskAllocatedData.length)
         let finalJson = getDeskAllocatedData.map(i => {
             let getBookingInfo = _getBookingsData.find(j => j.deskName === i.deskName);
             let result = {
@@ -99,7 +213,7 @@ function BookingsController() {
                 isBooked: false,
                 isUsingSyatem: true
             }
-            console.log(i.deskName, _getBookingsData, getBookingInfo);
+            // console.log(i.deskName, _getBookingsData, getBookingInfo);
             if (getBookingInfo) {
                 result.pid = getBookingInfo.pid;
                 result.name = getBookingInfo.name;
@@ -109,6 +223,7 @@ function BookingsController() {
             }
             return result;
         })
+        console.log('finalJson', finalJson.length)
 
         let tmpData = finalJson.reduce(
             (result, currentValue) => {
@@ -139,6 +254,7 @@ function BookingsController() {
     }
 
     function getAllSeatsAllocated(pids) {
+        console.log('getAllSeatsAllocated', pids);
         return store.store.DeskAllocations.filter(i => pids.includes(i.pid));
     }
 

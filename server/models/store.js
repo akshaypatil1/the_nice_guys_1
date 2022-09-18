@@ -1596,7 +1596,7 @@ module.exports = {
                 "zone": "B"
             }
         ],
-        ZoneAllocations: [
+        ZoneAllocations:[
             {
              "pid": 1000,
              "floor": 1,
@@ -1959,46 +1959,6 @@ module.exports = {
             },
             {
              "pid": 1000,
-             "floor": 2,
-             "zone": "B",
-             "deskName": "L2/B/09",
-             "fromDate": "09/18/2022",
-             "toDate": "09/18/2022"
-            },
-            {
-             "pid": 1000,
-             "floor": 2,
-             "zone": "B",
-             "deskName": "L2/B/10",
-             "fromDate": "09/18/2022",
-             "toDate": "09/18/2022"
-            },
-            {
-             "pid": 1000,
-             "floor": 2,
-             "zone": "B",
-             "deskName": "L2/B/11",
-             "fromDate": "09/18/2022",
-             "toDate": "09/18/2022"
-            },
-            {
-             "pid": 1000,
-             "floor": 2,
-             "zone": "B",
-             "deskName": "L2/B/12",
-             "fromDate": "09/18/2022",
-             "toDate": "09/18/2022"
-            },
-            {
-             "pid": 1000,
-             "floor": 2,
-             "zone": "B",
-             "deskName": "L2/B/13",
-             "fromDate": "09/18/2022",
-             "toDate": "09/18/2022"
-            },
-            {
-             "pid": 1000,
              "floor": 3,
              "zone": "A",
              "deskName": "L3/A/01",
@@ -2108,7 +2068,55 @@ module.exports = {
              "deskName": "L3/B/02",
              "fromDate": "09/18/2022",
              "toDate": "09/18/2022"
-            }
+            },
+            {
+                "pid": 1000,
+                "floor": 3,
+                "zone": "B",
+                "deskName": "L3/B/03",
+                "fromDate": "09/18/2022",
+                "toDate": "09/18/2022"
+               },
+               {
+                "pid": 1000,
+                "floor": 3,
+                "zone": "B",
+                "deskName": "L3/B/04",
+                "fromDate": "09/18/2022",
+                "toDate": "09/18/2022"
+               },
+               {
+                "pid": 1000,
+                "floor": 3,
+                "zone": "B",
+                "deskName": "L3/B/05",
+                "fromDate": "09/18/2022",
+                "toDate": "09/18/2022"
+               },
+               {
+                "pid": 1000,
+                "floor": 3,
+                "zone": "B",
+                "deskName": "L3/B/06",
+                "fromDate": "09/18/2022",
+                "toDate": "09/18/2022"
+               },
+               {
+                "pid": 1000,
+                "floor": 3,
+                "zone": "B",
+                "deskName": "L3/B/07",
+                "fromDate": "09/18/2022",
+                "toDate": "09/18/2022"
+               },
+               {
+                "pid": 1000,
+                "floor": 3,
+                "zone": "B",
+                "deskName": "L3/B/08",
+                "fromDate": "09/18/2022",
+                "toDate": "09/18/2022"
+               }
            ],
         DeskAllocations: [
             {
@@ -2380,37 +2388,8 @@ module.exports = {
                 "floor": 2,
                 "zone": "B",
                 "deskName": "L2/B/08"
-            },
-            {
-                "pid": 1200,
-                "floor": 2,
-                "zone": "B",
-                "deskName": "L2/B/09"
-            },
-            {
-                "pid": 1200,
-                "floor": 2,
-                "zone": "B",
-                "deskName": "L2/B/10"
-            },
-            {
-                "pid": 1200,
-                "floor": 2,
-                "zone": "B",
-                "deskName": "L2/B/11"
-            },
-            {
-                "pid": 1200,
-                "floor": 2,
-                "zone": "B",
-                "deskName": "L2/B/12"
-            },
-            {
-                "pid": 1200,
-                "floor": 2,
-                "zone": "B",
-                "deskName": "L2/B/13"
             }
+            
         ],
         Bookings: [
             {
