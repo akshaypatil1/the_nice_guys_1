@@ -13,8 +13,10 @@ import Add from "../../assests/Add.png";
 import "../Home/Home.css";
 
 import Create from "../../assests/Create.png";
+import Floorplan from "../../assests/floorplan.png";
 
 class Allocation extends React.Component {
+   
     constructor(props) {
         super(props);
         this.state = {
@@ -26,7 +28,10 @@ class Allocation extends React.Component {
             { value: 'strawberry', label: 'Strawberry' },
             { value: 'vanilla', label: 'Vanilla' }
         ]
+        
     }
+
+   
 
     componentDidMount() {
         this.fetchEmployees()
@@ -40,6 +45,8 @@ class Allocation extends React.Component {
             console.log(error.message)
         }
     }
+
+    
 
     render() {
         return (
@@ -162,6 +169,14 @@ class Allocation extends React.Component {
                             </button>
 
                 </div>
+
+                <div className='row' style={{marginTop:"30px",marginRight:"70px",marginLeft:"30px",marginBottom: "30px" }}>
+                        <img
+                            className=''
+                            src={Floorplan}
+                            alt="arrowicon"
+                        />
+                    </div>
             </>
         );
     }
