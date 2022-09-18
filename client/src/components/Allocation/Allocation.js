@@ -1,5 +1,7 @@
 import React from 'react';
-import * as EmployeesService from '../../services/EmployeesService'
+import * as EmployeesService from '../../services/EmployeesService';
+import * as BookingService from '../../services/BookingService';
+// import { browserHistory } from 'react-router-dom'
 import Header from "../common/Header/Header";
 import DatePicker from "react-datepicker";
 
@@ -12,6 +14,8 @@ import Search_icon from "../../assests/Search_icon.png";
 import Add from "../../assests/Add.png";
 import "../Home/Home.css";
 import { Dropdown } from 'primereact/dropdown';
+// import { Dialog } from 'primereact/dialog';
+import { Toast } from 'primereact/toast';
 
 import Create from "../../assests/Create.png";
 import Selection_floor_plan_01 from "../../assests/Selection floor plan01.png";
@@ -19,6 +23,7 @@ import Selection_floor_plan_02 from "../../assests/Selection floor plan02.png";
 import Selection_floor_plan_03 from "../../assests/Selection floor plan03.png";
 import Selection_floor_plan_04 from "../../assests/Selection floor plan04.png";
 import Selection_floor_plan_05 from "../../assests/Selection floor plan05.png";
+// import successfully_done_popup from "../../assests/successfully done popup.png";
 
 
 class Allocation extends React.Component {
@@ -29,6 +34,7 @@ class Allocation extends React.Component {
             employees: [],
             startDate: new Date(),
             mouseClick: 0,
+            displaySuccessMsg: false,
         }
         this.options = [
             { value: 'chocolate', label: 'Chocolate' },
@@ -55,12 +61,21 @@ class Allocation extends React.Component {
         }
     }
 
-
+    saveBookings = async()=>{
+        try {
+            let response = await BookingService.bookDesk();
+            this.toast.show({severity:'success', summary: 'Success Message', detail:'Seat booked successfully.', life: 3000});
+            setTimeout(()=>{ window.location.href = '/home'}, 3000)
+        } catch (error) {
+            console.log(error.message);
+        }        
+    }
 
     render() {
         return (
             <>
-                <Header active="Employees" />
+                <Header active="Allocation" />
+                <Toast ref={(el) => this.toast = el} />
                 <div className='container-fluid' style={{ marginLeft: "50px", background: "#E8E8E8" }}>
                     <div className="filterFormDiv col-md-12">
                         <div className='row'>
@@ -204,10 +219,18 @@ class Allocation extends React.Component {
                                     className=''
                                     src={Selection_floor_plan_05}
                                     alt="arrowicon"
+                                    onClick={() => this.saveBookings()}
                                 /> : ""}
 
                     </div>
                 </div>
+                {/* <Dialog visible={this.state.displaySuccessMsg} style={{ width: '20%', height:'250px' }} onHide={() => this.setState({ displaySuccessMsg: false })}>
+                    <div style={{textAlign:"center"}}>
+                        <i className="pi pi-check" style={{ 'fontSize': '5em', fontW}}></i><br />
+                        Successfully Seat Booked
+                    </div>
+
+                </Dialog> */}
             </>
         );
     }

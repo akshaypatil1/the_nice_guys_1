@@ -8,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;  
+  overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden;
   background-color: #E8E8E8 !important; /* Hide horizontal scrollbar */
 }

@@ -12,7 +12,7 @@ import {
 } from "react-pro-sidebar";
 
 //import icons from react icons
-import { FaList, FaRegHeart } from "react-icons/fa";
+import { FaList, FaRegHeart, FaHubspot } from "react-icons/fa";
 import {
   FiHome,
   FiLogOut,
@@ -58,7 +58,7 @@ class NavigationBar extends React.Component {
                  <MenuItem icon={<FiHome />}></MenuItem> 
 
                 </NavLink>
-                <NavLink
+                {/* <NavLink
                  // excat
                  activeclassName="navbar_link_active" 
                  className="mt-20 mb-20"
@@ -67,14 +67,14 @@ class NavigationBar extends React.Component {
                   <MenuItem icon={<FaList />}></MenuItem>
                 
                
-                </NavLink>
+                </NavLink> */}
                 <NavLink
                  // excat
                  activeclassName="navbar_link_active" 
                  className="mt-20 mb-20"
                   to="/Allocation"
 >
-                  <MenuItem icon={<FaList />}></MenuItem>
+                  <MenuItem icon={<FaHubspot />}></MenuItem>
                 
                
                 </NavLink>
