@@ -38,6 +38,7 @@ function BookingsController() {
 
         let _getBookingsData = getBookingsData.map(i => {
             i.name = store.store.Employee.filter(j => j.pid === i.pid).map(q => q.name).join();
+            i.birthDate = store.store.Employee.filter(j => j.pid === i.pid).map(q => q.birthDate).join();
             return i;
         })
 
@@ -64,6 +65,7 @@ function BookingsController() {
             if (getBookingInfo) {
                 result.pid = getBookingInfo.pid;
                 result.name = getBookingInfo.name;
+                result.birthDate = getBookingInfo.birthDate;
                 result.isBooked = true;
             }
             return result;

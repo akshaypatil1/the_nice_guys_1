@@ -7,6 +7,7 @@ module.exports = {
                 "emailId": "aniket@cs.com",
                 "roleId": "DIR",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": null
             },
             {
@@ -15,6 +16,7 @@ module.exports = {
                 "emailId": "akshay@cs.com",
                 "roleId": "VP",
                 "oeCode": "CDQU",
+                "birthDate": "18/09/20922",
                 "managersPid": 1000
             },
             {
@@ -23,6 +25,7 @@ module.exports = {
                 "emailId": "kiran@cs.com",
                 "roleId": "VP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1000
             },
             {
@@ -31,6 +34,7 @@ module.exports = {
                 "emailId": "disha@cs.com",
                 "roleId": "VP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1000
             },
             {
@@ -39,6 +43,7 @@ module.exports = {
                 "emailId": "abhishek@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1100
             },
             {
@@ -47,6 +52,7 @@ module.exports = {
                 "emailId": "pandurang@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": "18/09/2022",
                 "managersPid": 1100
             },
             {
@@ -55,6 +61,7 @@ module.exports = {
                 "emailId": "sourabh@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1100
             },
             {
@@ -63,6 +70,7 @@ module.exports = {
                 "emailId": "neha@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1100
             },
             {
@@ -71,6 +79,7 @@ module.exports = {
                 "emailId": "aishwarya@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1100
             },
             {
@@ -79,14 +88,16 @@ module.exports = {
                 "emailId": "madhuri@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
                 "pid": 1202,
                 "name": "Pooja Sawant",
-                "emailId": "pandurang@cs.com",
+                "emailId": "poojas@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -95,6 +106,7 @@ module.exports = {
                 "emailId": "madhuri@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -103,6 +115,7 @@ module.exports = {
                 "emailId": "shreya@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": "18/09/2022",
                 "managersPid": 1200
             },
             {
@@ -111,6 +124,7 @@ module.exports = {
                 "emailId": "bhau@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -119,6 +133,7 @@ module.exports = {
                 "emailId": "kushal@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -127,6 +142,7 @@ module.exports = {
                 "emailId": "sameer@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -135,6 +151,7 @@ module.exports = {
                 "emailId": "vishakha@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -143,6 +160,7 @@ module.exports = {
                 "emailId": "neena@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -151,6 +169,7 @@ module.exports = {
                 "emailId": "vaishali@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -166,6 +185,7 @@ module.exports = {
                 "emailId": "manasi@cs.com",
                 "roleId": "VP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2000
             },
             {
@@ -174,6 +194,7 @@ module.exports = {
                 "emailId": "shreyas@cs.com",
                 "roleId": "VP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2000
             },
             {
@@ -182,6 +203,7 @@ module.exports = {
                 "emailId": "nanna@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -190,6 +212,7 @@ module.exports = {
                 "emailId": "shweta@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -198,6 +221,7 @@ module.exports = {
                 "emailId": "shewta3@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -206,6 +230,7 @@ module.exports = {
                 "emailId": "shweta4@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -214,6 +239,7 @@ module.exports = {
                 "emailId": "shewta5@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": "19/09/2022",
                 "managersPid": 2100
             },
             {
@@ -222,6 +248,7 @@ module.exports = {
                 "emailId": "rupam1@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2200
             },
             {
@@ -230,6 +257,7 @@ module.exports = {
                 "emailId": "rupam2@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2200
             },
             {
@@ -238,6 +266,7 @@ module.exports = {
                 "emailId": "rupam3@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": "19/09/2022",
                 "managersPid": 2200
             },
             {
@@ -246,6 +275,7 @@ module.exports = {
                 "emailId": "rupam4@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2200
             },
             {
@@ -254,6 +284,7 @@ module.exports = {
                 "emailId": "rupam5@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2200
             },
             {
@@ -262,6 +293,7 @@ module.exports = {
                 "emailId": "rupam6@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2200
             },
             {
@@ -270,6 +302,7 @@ module.exports = {
                 "emailId": "rupam7@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2200
             },
             {
@@ -278,6 +311,7 @@ module.exports = {
                 "emailId": "rupam8@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2200
             },
             {
@@ -286,6 +320,7 @@ module.exports = {
                 "emailId": "rupam9@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2200
             },
             {
@@ -294,6 +329,7 @@ module.exports = {
                 "emailId": "rupam10@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2200
             },
             {
@@ -302,6 +338,7 @@ module.exports = {
                 "emailId": "dhiraj1@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -310,6 +347,7 @@ module.exports = {
                 "emailId": "dhiraj2@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -318,6 +356,7 @@ module.exports = {
                 "emailId": "dhiraj3@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -326,6 +365,7 @@ module.exports = {
                 "emailId": "dhiraj4@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -334,6 +374,7 @@ module.exports = {
                 "emailId": "dhiraj5@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -342,6 +383,7 @@ module.exports = {
                 "emailId": "dhiraj6@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -350,6 +392,7 @@ module.exports = {
                 "emailId": "dhiraj7@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -358,6 +401,7 @@ module.exports = {
                 "emailId": "dhiraj8@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -366,6 +410,7 @@ module.exports = {
                 "emailId": "dhiraj9@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -374,6 +419,7 @@ module.exports = {
                 "emailId": "dhiraj10@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -382,6 +428,7 @@ module.exports = {
                 "emailId": "dhiraj11@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -390,6 +437,7 @@ module.exports = {
                 "emailId": "dhiraj12@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -398,6 +446,7 @@ module.exports = {
                 "emailId": "dhiraj13@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -406,6 +455,7 @@ module.exports = {
                 "emailId": "dhiraj14@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -414,6 +464,7 @@ module.exports = {
                 "emailId": "dhiraj15@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -422,6 +473,7 @@ module.exports = {
                 "emailId": "dhiraj16@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -430,6 +482,7 @@ module.exports = {
                 "emailId": "dhiraj17@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -438,6 +491,7 @@ module.exports = {
                 "emailId": "dhiraj18@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -446,6 +500,7 @@ module.exports = {
                 "emailId": "dhiraj19@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -454,6 +509,7 @@ module.exports = {
                 "emailId": "dhiraj20@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1200
             },
             {
@@ -462,6 +518,7 @@ module.exports = {
                 "emailId": "rudra1@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -470,6 +527,7 @@ module.exports = {
                 "emailId": "rudra2@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -478,6 +536,7 @@ module.exports = {
                 "emailId": "rudra3@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -486,6 +545,7 @@ module.exports = {
                 "emailId": "rudra4@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -494,6 +554,7 @@ module.exports = {
                 "emailId": "rudra5@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -502,6 +563,7 @@ module.exports = {
                 "emailId": "rudra6@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -510,6 +572,7 @@ module.exports = {
                 "emailId": "rudra7@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -518,6 +581,7 @@ module.exports = {
                 "emailId": "rudra8@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -526,6 +590,7 @@ module.exports = {
                 "emailId": "rudra9@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -534,6 +599,7 @@ module.exports = {
                 "emailId": "rudra10@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -542,6 +608,7 @@ module.exports = {
                 "emailId": "rudra11@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -550,6 +617,7 @@ module.exports = {
                 "emailId": "rudra12@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -558,6 +626,7 @@ module.exports = {
                 "emailId": "rudra13@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -566,6 +635,7 @@ module.exports = {
                 "emailId": "rudra14@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -574,6 +644,7 @@ module.exports = {
                 "emailId": "rudra15@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -582,6 +653,7 @@ module.exports = {
                 "emailId": "rudra16@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -590,6 +662,7 @@ module.exports = {
                 "emailId": "rudra17@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -598,6 +671,7 @@ module.exports = {
                 "emailId": "rudra18@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -606,6 +680,7 @@ module.exports = {
                 "emailId": "rudra19@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -614,6 +689,7 @@ module.exports = {
                 "emailId": "rudra20@cs.com",
                 "roleId": "EMP",
                 "oeCode": "CDQU",
+                "birthDate": null,
                 "managersPid": 1300
             },
             {
@@ -622,6 +698,7 @@ module.exports = {
                 "emailId": "riya1@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -630,6 +707,7 @@ module.exports = {
                 "emailId": "riya2@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -638,6 +716,7 @@ module.exports = {
                 "emailId": "riya3@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -646,6 +725,7 @@ module.exports = {
                 "emailId": "riya4@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -654,6 +734,7 @@ module.exports = {
                 "emailId": "riya5@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -662,6 +743,7 @@ module.exports = {
                 "emailId": "riya6@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -670,6 +752,7 @@ module.exports = {
                 "emailId": "riya7@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -678,6 +761,7 @@ module.exports = {
                 "emailId": "riya8@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -686,6 +770,7 @@ module.exports = {
                 "emailId": "riya9@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -694,6 +779,7 @@ module.exports = {
                 "emailId": "riya10@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -702,6 +788,7 @@ module.exports = {
                 "emailId": "riya11@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -710,6 +797,7 @@ module.exports = {
                 "emailId": "riya12@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -718,6 +806,7 @@ module.exports = {
                 "emailId": "riya13@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -726,6 +815,7 @@ module.exports = {
                 "emailId": "riya14@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -734,6 +824,7 @@ module.exports = {
                 "emailId": "riya15@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -742,6 +833,7 @@ module.exports = {
                 "emailId": "riya16@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -750,6 +842,7 @@ module.exports = {
                 "emailId": "riya17@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -758,6 +851,7 @@ module.exports = {
                 "emailId": "riya18@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -766,6 +860,7 @@ module.exports = {
                 "emailId": "riya19@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -774,6 +869,7 @@ module.exports = {
                 "emailId": "riya20@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             },
             {
@@ -782,6 +878,7 @@ module.exports = {
                 "emailId": "riya21@cs.com",
                 "roleId": "EMP",
                 "oeCode": "MBCC",
+                "birthDate": null,
                 "managersPid": 2100
             }
         ],
@@ -1716,20 +1813,100 @@ module.exports = {
                 "floor": 1,
                 "zone": "A",
                 "deskName": "L1/A/01",
-                "allocatedBy": "1101",
-                "allocatedOn": "17/09/2022",
-                "fromDate": "17/09/2022",
-                "toDate": "17/09/2022"
+                "allocatedBy": "1100",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
             },
             {
                 "pid": 1102,
                 "floor": 1,
                 "zone": "A",
                 "deskName": "L1/A/02",
-                "allocatedBy": "1102",
-                "allocatedOn": "17/09/2022",
-                "fromDate": "17/09/2022",
-                "toDate": "17/09/2022"
+                "allocatedBy": "1100",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+            },
+            {
+                "pid": 1103,
+                "floor": 1,
+                "zone": "A",
+                "deskName": "L1/A/03",
+                "allocatedBy": "1100",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+            },
+            {
+                "pid": 1104,
+                "floor": 1,
+                "zone": "A",
+                "deskName": "L1/A/04",
+                "allocatedBy": "1100",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+            },
+            {
+                "pid": 1105,
+                "floor": 1,
+                "zone": "A",
+                "deskName": "L1/A/05",
+                "allocatedBy": "1100",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+            },
+            {
+                "pid": 1201,
+                "floor": 2,
+                "zone": "A",
+                "deskName": "L2/A/01",
+                "allocatedBy": "1200",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+            },
+            {
+                "pid": 1202,
+                "floor": 2,
+                "zone": "A",
+                "deskName": "L2/A/02",
+                "allocatedBy": "1200",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+            },
+            {
+                "pid": 1203,
+                "floor": 2,
+                "zone": "A",
+                "deskName": "L2/A/03",
+                "allocatedBy": "1200",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+            },
+            {
+                "pid": 1204,
+                "floor": 2,
+                "zone": "A",
+                "deskName": "L2/A/04",
+                "allocatedBy": "1200",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
+            },
+            {
+                "pid": 1205,
+                "floor": 2,
+                "zone": "A",
+                "deskName": "L2/A/05",
+                "allocatedBy": "1200",
+                "allocatedOn": "18/09/2022",
+                "fromDate": "18/09/2022",
+                "toDate": "18/09/2022"
             }
         ],
         DeskMasterDetails: [
