@@ -7,11 +7,12 @@ import Select from 'react-select'
 import "./Home.css";
 import * as HomeService from '../../services/HomeService'
 import jwt_decode from "jwt-decode";
-import floorplan from  "../../assests/floorplan.png";
-import Search_icon from  "../../assests/Search_icon.png";
-import less from  "../../assests/less.png";
-import greater from  "../../assests/greater.png";
-import Add from  "../../assests/Add.png";
+import floorplan from "../../assests/floorplan.png";
+import Search_icon from "../../assests/Search_icon.png";
+import less from "../../assests/less.png";
+import greater from "../../assests/greater.png";
+import Add from "../../assests/Add.png";
+import { DropdownMenu, MenuItem } from 'react-bootstrap-dropdown-menu';
 
 
 class Home extends React.Component {
@@ -50,7 +51,7 @@ class Home extends React.Component {
         try {
             let requestData = {
                 pid: 1000,
-                date: "17/09/2022",
+                date: "18/09/2022",
                 roleId: 'DIR'
             }
             let decoded = jwt_decode(sessionStorage.getItem('token'));
@@ -84,9 +85,9 @@ class Home extends React.Component {
         return (
             <>
                 <Header />
-                <div className='container-fluid' style={{marginLeft:"50px"}}>
+                <div className='container-fluid' style={{ marginLeft: "50px" }}>
                     <div className="filterFormDiv col-md-12">
-                        <div className="filterContainer" style={{ marginLeft:"30px",textAlign:"justify" }}>
+                        <div className="filterContainer" style={{ marginLeft: "30px", textAlign: "justify" }}>
                             <div className="inlineDisplay lign mr-30  wid-200">
                                 <label className='heading-label'>
                                     Floor
@@ -140,8 +141,8 @@ class Home extends React.Component {
 
                                 <img
                                     className='btnArrowIcon ml-10'
-                                src={Search_icon}
-                                alt="arrowicon"
+                                    src={Search_icon}
+                                    alt="arrowicon"
                                 />
                             </button>
 
@@ -164,8 +165,8 @@ class Home extends React.Component {
                             >
                                 <img
                                     className='btnArrowIcon mr-10'
-                                src={Add}
-                                alt="arrowicon"
+                                    src={Add}
+                                    alt="arrowicon"
                                 />
                                 Create Desk Allocation
 
@@ -174,58 +175,58 @@ class Home extends React.Component {
                         </div>
 
                         <div className="mt-20">
-                            <div className='row col-md-12 vertiAlign' style={{ height: "250px", marginTop: "20px",background: "#f7f7f7" }}>
-                                <div className='section3'  style={{ height: "150px", margin: "30px", marginTop: "50px", width: "150px" }}>
+                            <div className='row col-md-12 vertiAlign' style={{ height: "250px", marginTop: "20px", background: "#f7f7f7" }}>
+                                <div className='section3' style={{ height: "150px", margin: "30px", marginTop: "50px", width: "150px" }}>
                                     <span onClick={this.getPreviousFloor}> <span onClick={this.getNextFloor}> <img
                                         src={less}
-                                        style={{height:"40px",marginTop :"40px"}}
-                                        /></span></span>
+                                        style={{ height: "40px", marginTop: "40px" }}
+                                    /></span></span>
                                 </div>
-                                <div className='section2' style={{ height: "150px",margin: "50px 30px 30px 0px", marginTop: "50px", width: "450px" }}>
-                                    <div className='status-title' style={{margintop:"10px"}}>
+                                <div className='section2' style={{ height: "150px", margin: "50px 30px 30px 0px", marginTop: "50px", width: "450px" }}>
+                                    <div className='status-title' style={{ margintop: "10px" }}>
                                         <span class="title">Floor</span>
                                         <br>
                                         </br>
-                                        <h1 style={{fontSize:"50px",marginTop:"30px"}}>{this.state.floorStats[this.state.currentFloorIndex]?.floor}</h1>
+                                        <h1 style={{ fontSize: "50px", marginTop: "30px" }}>{this.state.floorStats[this.state.currentFloorIndex]?.floor}</h1>
                                     </div>
                                 </div>
                                 <div className='section2' style={{ height: "150px", margin: "50px 30px 30px 0px", width: "450px" }}>
-                                    <div className='status-title' style={{margintop:"10px"}}>
+                                    <div className='status-title' style={{ margintop: "10px" }}>
                                         <span class="title">Total Allocation Seat</span>
                                         <br>
                                         </br>
-                                        <h1 style= {{fontSize:"50px",marginTop:"30px"}}>{this.state.floorStats[this.state.currentFloorIndex]?.totalAllocated}</h1>
+                                        <h1 style={{ fontSize: "50px", marginTop: "30px" }}>{this.state.floorStats[this.state.currentFloorIndex]?.totalAllocated}</h1>
                                     </div>
                                 </div>
                                 <div className='section2' style={{ height: "150px", margin: "50px 30px 30px 0px", width: "450px" }}>
-                                    <div className='status-title' style={{margintop:"10px"}}>
+                                    <div className='status-title' style={{ margintop: "10px" }}>
                                         <span class="title" >Booked Seat</span>
                                         <br>
                                         </br>
-                                        <h1 style= {{fontSize:"50px",marginTop:"30px"}}>{this.state.floorStats[this.state.currentFloorIndex]?.totalBooked}</h1>
+                                        <h1 style={{ fontSize: "50px", marginTop: "30px" }}>{this.state.floorStats[this.state.currentFloorIndex]?.totalBooked}</h1>
                                     </div>
                                 </div>
                                 <div className='section2' style={{ height: "150px", margin: "50px 30px 30px 0px", width: "450px" }}>
-                                    <div className='status-title' style={{margintop:"10px"}}>
+                                    <div className='status-title' style={{ margintop: "10px" }}>
                                         <span class="title">Available Seat</span>
                                         <br>
                                         </br>
-                                        <h1 style= {{fontSize:"50px",marginTop:"30px"}}>{this.state.floorStats[this.state.currentFloorIndex]?.totalAvailable}</h1>
+                                        <h1 style={{ fontSize: "50px", marginTop: "30px" }}>{this.state.floorStats[this.state.currentFloorIndex]?.totalAvailable}</h1>
                                     </div>
 
 
                                 </div>
-                                <div className='section3'  style={{ height: "150px", margin: "30px", marginTop: "50px", width: "150px", marginLeft: "0px" }}>
+                                <div className='section3' style={{ height: "150px", margin: "30px", marginTop: "50px", width: "150px", marginLeft: "0px" }}>
                                     <div className=''>
                                         <span onClick={this.getNextFloor}> <img
-                                        src={greater}
-                                        style={{height:"40px",marginTop :"40px"}}
+                                            src={greater}
+                                            style={{ height: "40px", marginTop: "40px" }}
                                         /></span>
                                     </div>
                                 </div>
-                                <hr/>
+                                <hr />
                             </div>
-                        
+
 
 
                         </div>
@@ -233,12 +234,51 @@ class Home extends React.Component {
                         <div className="col-md-12" style={{ marginTop: "50px", marginLeft: "50px" }}>
                             <div className='row'>
                                 <div className="col-md-7" style={{ height: "400px", marginTop: "20px", marginRight: "30px", marginLeft: "50px" }}>
-                                <img className="logoCs"  src={floorplan} alt="Floor Planning" />
+                                    <img className="logoCs" src={floorplan} alt="Floor Planning" />
                                 </div>
                                 <div className="row col-md-4" style={{ height: "400px", marginTop: "20px", background: "grey", marginRight: "30px" }}>
-                                    {this.state.floorWiseBookings.map(booking => (
-                                        <p key={booking.deskName}><span>{booking.name}</span><span>{booking.deskName}</span><span>{booking.isUsingSyatem}</span></p>
-                                    ))}
+                                    <table>
+                                        <thead>
+                                            <th>Employee Name</th>
+                                            <th>Seat No.</th>
+                                            <th>Date</th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody>
+                                            {this.state.floorWiseBookings.map(booking => (
+                                                <tr>
+                                                    <td>
+                                                        {booking.name}
+                                                    </td>
+                                                    <td>
+                                                        {booking.deskName}
+                                                    </td>
+                                                    <td>
+                                                        18/09/2022
+                                                    </td>
+                                                    <td>
+                                                        <DropdownMenu position='right' triggerType='icon' trigger='glyphicon glyphicon-option-vertical'>
+                                                            <MenuItem text="View Details" />
+                                                            <MenuItem text="View Attendees" />
+                                                            <MenuItem text="Monthly Details" />
+                                                        </DropdownMenu>
+                                                    </td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                    {/* {this.state.floorWiseBookings.map(booking => (
+                                        <p key={booking.deskName}>
+                                            <span>{booking.name}</span>
+                                            <span>{booking.deskName}</span>
+                                            <span>{booking.isUsingSyatem}</span>
+                                            <DropdownMenu position='right' triggerType='icon' trigger='glyphicon glyphicon-option-vertical'>
+                                                <MenuItem text="View Details" />
+                                                <MenuItem text="View Attendees" />
+                                                <MenuItem text="Monthly Details" />
+                                            </DropdownMenu>
+                                        </p>
+                                    ))} */}
                                 </div>
                             </div>
 

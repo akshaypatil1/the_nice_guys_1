@@ -5,6 +5,8 @@ import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 import Select from 'react-select'
+import { Calendar } from 'primereact/calendar';
+import { DropdownMenu, MenuItem } from 'react-bootstrap-dropdown-menu';
 
 class Employees extends React.Component {
     constructor(props) {
@@ -17,7 +19,7 @@ class Employees extends React.Component {
             { value: 'chocolate', label: 'Chocolate' },
             { value: 'strawberry', label: 'Strawberry' },
             { value: 'vanilla', label: 'Vanilla' }
-          ]
+        ]
     }
 
     componentDidMount() {
@@ -36,15 +38,21 @@ class Employees extends React.Component {
     render() {
         return (
             <>
-            <Header active="Employees"/>
+                <Header active="Employees" />
                 <div>hello</div>
-                <Select options={this.options} />
-                <DatePicker selected={this.state.startDate} onChange={(date) => this.setState({startDate: date})} />
-                <ul>
+                {/* <Select options={this.options} /> */}
+                <DatePicker selected={this.state.startDate} onChange={(date) => this.setState({ startDate: date })} />
+                <Calendar value={this.state.startDate} onChange={(e) => this.setState(e.value)}></Calendar>
+                <DropdownMenu position='right' triggerType='icon' trigger='glyphicon glyphicon-option-vertical'>
+                    <MenuItem text="View Details" />
+                    <MenuItem text="View Attendees" />
+                    <MenuItem text="Monthly Details" />
+                </DropdownMenu>
+                {/* <ul>
                     {this.state.employees.map(employee => (
                         <li key={employee.id}>{employee.name}</li>
                     ))}
-                </ul>
+                </ul> */}
             </>
         );
     }
