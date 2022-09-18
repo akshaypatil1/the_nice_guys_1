@@ -4,10 +4,12 @@
     background: black;
 }
 .logCs{
-    height: 33px;
+   
     position: absolute;
-    right: 30px;
     float: right !important;
+    height: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
    
 }
 .navbar-brand{

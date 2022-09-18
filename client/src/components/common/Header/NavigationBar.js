@@ -21,7 +21,7 @@ import {
 } from "react-icons/fi";
 import { RiPencilLine } from "react-icons/ri";
 import { BiCog } from "react-icons/bi";
-import logocs from "../../../assests/logocs.svg";
+import CSsymbol from "../../../assests/CSsymbol.png";
 
 //import sidebar css from react-pro-sidebar module and our custom css
 import "react-pro-sidebar/dist/css/styles.css";
@@ -34,13 +34,13 @@ class NavigationBar extends React.Component {
       <>
         <div id="navigationBar">
           {/* collapsed props to change menu size using menucollapse state */}
-          <ProSidebar collapsed={true}>
+          <ProSidebar>
             <SidebarHeader>
-              <div className="logotext">
+              <div className="logotext" style={{height:"40px", margin:"10px"}}>
                 {/* small and big change using menucollapse state */}
                 <img
                   className="logoCs"
-                 // src={logocs}
+                 src={CSsymbol}
                   alt="Credit Suisse Logo"
                 />
               </div>

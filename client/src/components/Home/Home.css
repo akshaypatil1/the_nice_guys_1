@@ -9,8 +9,9 @@
         width: 100%;
         height:100px;
         color: black;
-        font-family: Credit Suisse type;
+        font-family: inherit;
         padding:20px 0px 20px 10px;
+        border: 1px solid #dee2e6;
       }
       .mr-30{
         margin-right:30px;
@@ -38,7 +39,7 @@
         background:black;
         border:none;
         font-size:14px;
-        font-family:Credit Suisse Type;
+        font-family:inherit;
     
       }
       .wid-150{
@@ -53,5 +54,14 @@
       }
       .title{
         font-size: 16px;
-        font-family:Credit Suisse type;
+        font-family:inherit;
+      }
+      .wid-200{
+        width:250px;
+      }
+      .ml-10{
+        margin-left:10px;
+      }
+      .mr-10{
+        margin-right: 10px;
       }

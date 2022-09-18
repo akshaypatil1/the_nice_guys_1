@@ -1,7 +1,7 @@
 import React from "react";
 import "./Branding.css";
 
-import logo from  "../../../assests/logo.svg";
+import logoCs from  "../../../assests/logoCs.png";
 
 class Branding extends React.Component {
    
@@ -11,7 +11,7 @@ class Branding extends React.Component {
                 <span className ="navbar-brand" style={{height:"40px !important"}}>
                     <img
                     className="logoCs"
-                   // src={logo}
+                    src={logoCs}
                     alt="Credit Suisse Logo"
                     />
                 </span>

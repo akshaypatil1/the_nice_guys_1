@@ -1,6 +1,5 @@
 #navigationBar {
   position: absolute;
-  width: 220px;
 }
 #navigationBar .pro-sidebar {
   height: 100vh;
@@ -21,9 +20,10 @@
   width: 100%;
   min-width: 100%;
 }
-#navigationBar .pro-sidebar.collapsed {
-  width: 80px;
-  min-width: 80px;
+
+  #navigationBar .pro-sidebar {
+    width: 60px;
+    min-width: 60px;
 }
 #navigationBar .pro-sidebar-inner {
   background-color: #0c0b0b;

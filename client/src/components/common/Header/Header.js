@@ -1,6 +1,7 @@
 import React from "react";
 import Branding from "./Branding";
 import NavigationBar from "./NavigationBar";
+import TopBar from "./TopBar";
  //import ReactNotification from "react-notifications-component";
 /** Importing Css*/
  
@@ -12,8 +13,8 @@ import NavigationBar from "./NavigationBar";
     render(){
         return(
             <>
-          <Branding/>
-          <NavigationBar active={this.props.active}/>
+         <NavigationBar />
+          <TopBar />
             </>
         );
     }

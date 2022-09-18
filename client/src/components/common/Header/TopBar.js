@@ -1,60 +1,59 @@
 import React from "react";
-//import "./TopBar.css";
+import "./TopBar.css";
 
-import logo from  "../../../assests/logo.svg";
+import User from "../../../assests/User.png";
 
 class TopBar extends React.Component {
-   
-    render(){
-        return(
-            <div class="topNav">
-            
-            <div class="leftwrapper" style={{float:"left",marginLeft: "90px",}}>
-                <span className="title" style={{fontSize:"20px",fontFamily:"Credit-Suisse-type"}}>
-                    My Cs Space
-                </span>
+
+    render() {
+        return (
+            <div class="topNav" style={{ height: "60px", borderBottom: "1px solid #d8dbe0" }}>
+
+                <div class="leftwrapper" style={{ float: "left", marginLeft: "90px", }}>
+                    <span className="title" style={{ fontSize: "30px", fontFamily: "inherit" }}>
+                        My CS Space
+                    </span>
                 </div>
-            
+
                 <div class="middleWrapper">
-               
+
                 </div>
-                <div class="rightWrapper rightAlign padRight">
+                <div class="rightWrapper rightAlign padRight row">
                     <div className="wrapperleft">
                         <span className="namefont">
-                         Monalisha Panda(CDQU 21)
+                            Monalisha Panda(CDQU 21)
                         </span>
                     </div>
 
-                    {/* <div className="wrapperleft">
+                    <div className="wrapperleft">
                         <span className="namefont">
-                       Login Date:18-09-22
+                            Login Date:18-09-22
                         </span>
-                    </div> */}
                     </div>
-
-                    <div class="wrapperRight mright-15">
-                        <div className="userIcon">
-                            <img
+                    <div className="userIcon">
+                        <img
                             alt="User Profile"
                             title="User"
                             className="userprofile"
-                           // src={userIcon}
-                            />
-                        </div>
+                          src={User}
+                        />
+                    </div>
+                  
                 </div>
-            
-           
-          
-              
-           </div>
-           
-        
-          
-           
-      
+
+                
+
+
+
+            </div>
+
+
+
+
+
         );
     }
-    
+
 }
 
 
