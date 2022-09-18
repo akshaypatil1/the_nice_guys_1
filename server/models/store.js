@@ -1596,14 +1596,520 @@ module.exports = {
                 "zone": "B"
             }
         ],
-        ZoneAllocations: [{
-            "pid": "",
-            "floor": "",
-            "zone": "",
-            "deskName": "",
-            "fromDate": "",
-            "toDate": ""
-        }],
+        ZoneAllocations: [
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "A",
+             "deskName": "L1\/A\/01",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "A",
+             "deskName": "L1\/A\/02",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "A",
+             "deskName": "L1\/A\/03",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "A",
+             "deskName": "L1\/A\/04",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "A",
+             "deskName": "L1\/A\/05",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "A",
+             "deskName": "L1\/A\/06",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "A",
+             "deskName": "L1\/A\/07",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "A",
+             "deskName": "L1\/A\/08",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "A",
+             "deskName": "L1\/A\/09",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "A",
+             "deskName": "L1\/A\/10",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "A",
+             "deskName": "L1\/A\/11",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "A",
+             "deskName": "L1\/A\/12",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "B",
+             "deskName": "L1\/B\/01",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "B",
+             "deskName": "L1\/B\/02",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "B",
+             "deskName": "L1\/B\/03",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "B",
+             "deskName": "L1\/B\/04",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "B",
+             "deskName": "L1\/B\/05",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "B",
+             "deskName": "L1\/B\/06",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "B",
+             "deskName": "L1\/B\/07",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "B",
+             "deskName": "L1\/B\/08",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "B",
+             "deskName": "L1\/B\/09",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "B",
+             "deskName": "L1\/B\/10",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "B",
+             "deskName": "L1\/B\/11",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "B",
+             "deskName": "L1\/B\/12",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 1,
+             "zone": "B",
+             "deskName": "L1\/B\/13",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "A",
+             "deskName": "L2\/A\/01",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "A",
+             "deskName": "L2\/A\/02",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "A",
+             "deskName": "L2\/A\/03",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "A",
+             "deskName": "L2\/A\/04",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "A",
+             "deskName": "L2\/A\/05",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "A",
+             "deskName": "L2\/A\/06",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "A",
+             "deskName": "L2\/A\/07",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "A",
+             "deskName": "L2\/A\/08",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "A",
+             "deskName": "L2\/A\/09",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "A",
+             "deskName": "L2\/A\/10",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "A",
+             "deskName": "L2\/A\/11",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "A",
+             "deskName": "L2\/A\/12",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "B",
+             "deskName": "L2\/B\/01",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "B",
+             "deskName": "L2\/B\/02",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "B",
+             "deskName": "L2\/B\/03",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "B",
+             "deskName": "L2\/B\/04",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "B",
+             "deskName": "L2\/B\/05",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "B",
+             "deskName": "L2\/B\/06",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "B",
+             "deskName": "L2\/B\/07",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "B",
+             "deskName": "L2\/B\/08",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "B",
+             "deskName": "L2\/B\/09",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "B",
+             "deskName": "L2\/B\/10",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "B",
+             "deskName": "L2\/B\/11",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "B",
+             "deskName": "L2\/B\/12",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 2,
+             "zone": "B",
+             "deskName": "L2\/B\/13",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 3,
+             "zone": "A",
+             "deskName": "L3\/A\/01",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 3,
+             "zone": "A",
+             "deskName": "L3\/A\/02",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 3,
+             "zone": "A",
+             "deskName": "L3\/A\/03",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 3,
+             "zone": "A",
+             "deskName": "L3\/A\/04",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 3,
+             "zone": "A",
+             "deskName": "L3\/A\/05",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 3,
+             "zone": "A",
+             "deskName": "L3\/A\/06",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 3,
+             "zone": "A",
+             "deskName": "L3\/A\/07",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 3,
+             "zone": "A",
+             "deskName": "L3\/A\/08",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 3,
+             "zone": "A",
+             "deskName": "L3\/A\/09",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 3,
+             "zone": "A",
+             "deskName": "L3\/A\/10",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 3,
+             "zone": "A",
+             "deskName": "L3\/A\/11",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 3,
+             "zone": "A",
+             "deskName": "L3\/A\/12",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 3,
+             "zone": "B",
+             "deskName": "L3\/B\/01",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            },
+            {
+             "pid": 1000,
+             "floor": 3,
+             "zone": "B",
+             "deskName": "L3\/B\/02",
+             "fromDate": "09\/18\/2022",
+             "toDate": "09\/18\/2022"
+            }
+           ],
         DeskAllocations: [
             {
                 "pid": 1100,
