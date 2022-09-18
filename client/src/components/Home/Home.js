@@ -98,25 +98,25 @@ class Home extends React.Component {
                         <div className='row'>
                             <div className='col-md-2'>
                                 <div class="form-group">
-                                    <label for="usr" style={{"float":"left"}}>Floor:</label><br />
+                                    <label for="usr" className='title-font' style={{ fontSize: "20px", textAlign: 'justify',float:"left" }} >Floor:</label><br />
                                     <Dropdown style={{ width: "100%" }} optionLabel="label" optionValue="value" value={this.state.selectedFloor} options={this.state.floors} onChange={(e) => this.setState({ selectedFloor: e.value })} placeholder="Select a floor" />
                                 </div>
                             </div>
                             <div className='col-md-2'>
                                 <div class="form-group">
-                                    <label for="usr" style={{"float":"left"}}>Zone:</label><br />
+                                    <label for="usr" className='title-font' style={{ fontSize: "20px",textAlign: 'justify',float:"left" }}>Zone:</label><br />
                                     <Dropdown style={{ width: "100%" }} optionLabel="label" optionValue="value" value={this.state.selectedZone} options={this.state.zones} onChange={(e) => this.setState({ selectedZone: e.value })} placeholder="Select a zone" />
                                 </div>
                             </div>
                             <div className='col-md-2'>
                                 <div class="form-group">
-                                    <label for="usr" style={{"float":"left"}}>From Date:</label><br />
+                                    <label for="usr" className='title-font' style={{ fontSize: "20px",textAlign: 'justify',float:"left" }}>From Date:</label><br />
                                     <Calendar style={{ width: "100%" }} value={this.state.startDate} onChange={(e) => this.setState({ startDate: e.value })}></Calendar>
                                 </div>
                             </div>
                             <div className='col-md-2'>
                                 <div class="form-group">
-                                    <label for="usr" style={{"float":"left"}}>To Date:</label><br />
+                                    <label for="usr" className='title-font' style={{ fontSize: "20px",textAlign: 'justify',float:"left" }}>To Date:</label><br />
                                     <Calendar style={{ width: "100%" }} value={this.state.toDate} onChange={(e) => this.setState({ toDate: e.value })}></Calendar>
                                 </div>
                             </div>
@@ -132,12 +132,13 @@ class Home extends React.Component {
                                             fontSize: "18px",
                                             fontFamily: "Credit Suisse Type",
                                             height: "50px",
-                                            width: "150px",
+                                            width: "200px",
                                             marginRight: "20px",
+                                            marginLeft:"170px",
                                             padding: "10px",
-                                            marginTop: "22px",
+                                            marginTop: "29px",
                                             border: "1px solid grey",
-                                            width: "100%"
+                                            
                                         }}
                                     >
                                         <Link to="/Allocation" style={{"text-decoration": "none", "color": "black"}}>
@@ -163,10 +164,10 @@ class Home extends React.Component {
                                             fontSize: "18px",
                                             fontFamily: "Credit Suisse Type",
                                             height: "50px",
-                                            width: "100%",                                            
-                                            marginTop: "22px",
-                                            marginRight:"15px",
-                                            width: "100%"
+                                            width: "250px",                                            
+                                            marginTop: "30px",
+                                            marginRight:"125px",
+                                           
                                         }}
                                     >
                                         <img
@@ -191,34 +192,34 @@ class Home extends React.Component {
                             </div>
                             <div className='shadow section2 bg-white rounded' style={{ height: "150px", margin: "50px 30px 30px 0px", marginTop: "50px", width: "450px" }}>
                                 <div className='status-title' style={{ margintop: "10px" }}>
-                                    <span class="title">Floor</span>
+                                    <span className='title-font' style={{ fontSize: "20px",textAlign: 'justify',float:"left",marginTop: "20px",marginLeft: "20px" }}>Floor</span>
                                     <br>
                                     </br>
-                                    <h1 style={{ fontSize: "50px", marginTop: "30px" }}>{this.state.floorStats[this.state.currentFloorIndex]?.floor}</h1>
+                                    <h1 style={{ fontSize: "50px", marginTop: "30px",float:"left" }}>{this.state.floorStats[this.state.currentFloorIndex]?.floor}</h1>
                                 </div>
                             </div>
                             <div className='shadow section2 bg-white rounded' style={{ height: "150px", margin: "50px 30px 30px 0px", width: "450px" }}>
                                 <div className='status-title' style={{ margintop: "10px" }}>
-                                    <span class="title">Total Allocation Seat</span>
+                                    <span className='title-font' style={{ fontSize: "20px",textAlign: 'justify',float:"left",marginTop: "20px",marginLeft: "20px" }}>Total Allocation Seat</span>
                                     <br>
                                     </br>
-                                    <h1 style={{ fontSize: "50px", marginTop: "30px" }}>{this.state.floorStats[this.state.currentFloorIndex]?.totalAllocated}</h1>
+                                    <h1 style={{ fontSize: "50px", marginTop: "30px",float:"left" }}>{this.state.floorStats[this.state.currentFloorIndex]?.totalAllocated}</h1>
                                 </div>
                             </div>
                             <div className='shadow section2 bg-white rounded' style={{ height: "150px", margin: "50px 30px 30px 0px", width: "450px" }}>
                                 <div className='status-title' style={{ margintop: "10px" }}>
-                                    <span class="title" >Booked Seat</span>
+                                    <span className='title-font' style={{ fontSize: "20px",textAlign: 'justify',float:"left" ,marginTop: "20px",marginLeft: "20px" }} >Booked Seat</span>
                                     <br>
                                     </br>
-                                    <h1 style={{ fontSize: "50px", marginTop: "30px" }}>{this.state.floorStats[this.state.currentFloorIndex]?.totalBooked}</h1>
+                                    <h1 style={{ fontSize: "50px", marginTop: "30px",float:"left" }}>{this.state.floorStats[this.state.currentFloorIndex]?.totalBooked}</h1>
                                 </div>
                             </div>
                             <div className='shadow section2 bg-white rounded' style={{ height: "150px", margin: "50px 30px 30px 0px", width: "450px" }}>
                                 <div className='status-title' style={{ margintop: "10px" }}>
-                                    <span class="title">Available Seat</span>
+                                    <span className='title-font' style={{ fontSize: "20px",textAlign: 'justify',float:"left",marginTop: "20px",marginLeft: "20px" }}>Available Seat</span>
                                     <br>
                                     </br>
-                                    <h1 style={{ fontSize: "50px", marginTop: "30px" }}>{this.state.floorStats[this.state.currentFloorIndex]?.totalAvailable}</h1>
+                                    <h1 style={{ fontSize: "50px", marginTop: "30px",float:"left" }}>{this.state.floorStats[this.state.currentFloorIndex]?.totalAvailable}</h1>
                                 </div>
 
 

@@ -32,16 +32,16 @@ class TopBar extends React.Component {
         return (
             <div class="topNav" style={{ height: "60px", borderBottom: "1px solid #d8dbe0",background:"white" }}>
 
-                <div class="leftwrapper" style={{ float: "left", marginLeft: "90px", }}>
+                <div class="leftwrapper" style={{ float: "left", marginLeft: "90px",marginTop:"5px" }}>
                     <span className="title" style={{ fontSize: "30px", fontFamily: "inherit" }}>
-                        My CS Space
+                        My CS WorkSpace
                     </span>
                 </div>
 
                 <div class="middleWrapper">
 
                 </div>
-                <div class="rightWrapper rightAlign padRight row">
+                <div class="rightWrapper rightAlign padRight row" style={{ marginTop:"5px" }}>
                     <div className="wrapperleft">
                         <span className="namefont">
                             {this.state.userName}
