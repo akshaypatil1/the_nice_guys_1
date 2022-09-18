@@ -141,6 +141,25 @@ class Allocation extends React.Component {
                             alt="arrowicon"
                         />
                     </div>
+                    <button
+                                id="floorSearch"
+                                onclick={{}}
+                                classname="primarySubmitButton btn-primary wid-150 mr-30"
+                                style={{
+                                    color: "white",
+                                    background: "black",
+                                    border: "none",
+                                    fontSize: "20px",
+                                    fontFamily: "Credit Suisse Type",
+                                    height: "50px",
+                                    width: "250px",
+                                    marginLeft: "20px",
+                                    padding: "10px",
+                                    marginTop: "20px",
+                                }}
+                            >   
+                                Get Floor Plan
+                            </button>
 
                 </div>
             </>
