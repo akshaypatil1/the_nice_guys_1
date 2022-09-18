@@ -18,6 +18,28 @@ function BookingsController() {
         }
     };
 
+    this.getAssignedFloors = function(req,res,next){
+        let floorList = [];
+        let result = store.store.ZoneAllocations.map(q=>q.floor);
+        for(var i=0;i<result.length;i++){
+            if(!floorList.includes(result[i])){
+                floorList.push(result[i]);
+            }
+        }
+        success(res, 200, floorList, next) 
+    };
+
+    this.getAssignedZones = function(req,res,next){
+        let zoneList = [];
+        let result = store.store.ZoneAllocations.map(q=>q.zone);
+        for(var i=0;i<result.length;i++){
+            if(!zoneList.includes(result[i])){
+                zoneList.push(result[i]);
+            }
+        }
+        success(res, 200, zoneList, next) 
+    };
+
     this.getBookings = function (req, res, next) {
 
         let getAllChildData = getAllChild(parseInt(req.body.pid));

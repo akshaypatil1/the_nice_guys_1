@@ -22,5 +22,11 @@ route.route('/bookings/:pid?')
 // .put(Bookings.put)
 // .delete(Bookings.del);
 
+route.route("/getFloorsList")
+.get(Bookings.getAssignedFloors);
+
+route.route("/getZoneList")
+.get(Bookings.getAssignedZones);
+
 route.route('/login').post(Public.login);
 module.exports = route;
